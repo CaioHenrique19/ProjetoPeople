@@ -1,0 +1,41 @@
+body {
+    font-family: "Poppins";
+}
+.wrapper2{
+    overflow:hidden; 
+    margin:10px;
+    float: right;
+    width: 50%;    
+}
+
+.item{
+    display:inline-block; 
+    width:40%;
+    margin:5px;
+}
+
+.sobremim{
+    border: 3px solid #0000;
+    float: right;
+    column-gap: 50%;
+    align-content: center;
+    width: 50%;
+    margin:10px;
+    margin-right: 30px;
+}
+
+.smtitle{
+  text-align:center;
+}
+ul {
+    list-style-type: none;
+}
+
+.item strong{
+    font-size: 14px;
+    font-weight: bold;
+}
+.item p{
+    font-size: 14px;
+    font-weight: normal;
+}
