@@ -39,3 +39,20 @@ ul {
     font-size: 14px;
     font-weight: normal;
 }
+
+.item2{
+    font-size: 14px;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.biotitle{
+    text-align: left;
+    font-size: 18;
+    font-weight: bold;
+}
+hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #CCC, transparent); 
+}
