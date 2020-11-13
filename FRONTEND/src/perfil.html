@@ -7,16 +7,40 @@
 
     <title>Perfil - Card</title>
 
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/topo.css">
+    <link rel="stylesheet" href="/styles/style-card-perfil.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet"href="/styles/timeline.css">
+    <link rel="stylesheet" href="/styles/minhas-recompensas.css">
+    
     <link rel = "stylesheet" href = " https://fonts.googleapis.com/css?family=Poppins ">
 
 </head>
 
 <body>
     <header>
-        <div class="caixa-top">
-            <h1 style="text-align: center">CABEÇALHO</h1>
-        </div>
+        <!-- <div class="caixa-top"> -->
+            
+            <div class ="principal">
+                <div class="topo">
+                    <div class="img-logo">
+                        <img src="/imagens/Logo.png"id="img-logo">
+                    </div>
+                    <div class="barraPesquisaTopo">
+                        <input type = "text"id="pesquisarTopo"style="height:25px;border-radius:10px; margin-top: 3%; margin-left:1%">
+                        <img src="/imagens/loupe.png"id="btnLupaTopo">
+                    </div>         
+                    <div class="logout">
+                        <div class=logout-logout>
+                            <a href=""id="editarperfil">editar perfil</a>
+                            <p class="traco">|</p>
+                            <a href=""id="logoutlogout">logout</a>
+                            <img src="/imagens/billPerfil.png"id="logoutTopo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
     </header>
     <main>
         <div class=caixa-card>
@@ -99,6 +123,158 @@
                 </div>
             </div>
         </div>
+
+        <div class="caixa-principal-perfil">
+
+            <div class="allabout">
+                    <div class="sobremim">
+                        <h1 class="smtitle">Sobre mim</h1>
+                    </div>
+                    
+                    <div class="wrapper2">
+                        <hr>
+                        <div class="item">
+                            <ul>
+                                <li>
+                                    <p name="nome"><strong>Nome </strong>Bill Gates</p>
+                                </li>
+                                <li>
+                                    <p name="community"><strong>Comunidade </strong>Diversity</p>
+                                </li>
+                                <li>
+                                    <p name="contact"><strong>Contato </strong>+551499437532</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <ul>
+                                <li>
+                                    <p name="coach"><strong>Coach/Carrer Advisor </strong>Paul Allen</p>
+                                </li>
+                                <li>
+                                    <p name="pdm"><strong>PDM </strong>Brad Smith</p>
+                                </li>
+                                <li>
+                                    <p name="bp"><strong>BP </strong>Satya Nadella</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </div> 
+        
+            <div class="biografia"> 
+                <div class="wrapper2">
+                    <div>
+                        <h1 class="smtitle">Minha História</h1>
+                    </div>
+                    <hr>
+                    <div>
+                        <h2 class="title">Biografia</h2>
+                    </div>
+                    <div class="biografia-texto">
+                        <p class="item2">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
+                            type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+                            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum 
+                            passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="linha-do-tempo">
+                
+                <!-- <div class="timeline">--><h1>Linha do Tempo</h1> 
+                    <div class="progress">
+                        <ul>
+                            <li>
+                                <p>IBM</p>
+                                <i class="fa fa-check"></i>
+                                <p class="pdata">11/2000</p>
+                            </li>
+                            <li>
+                                <p>Itaú</p>
+                                <i class="fa fa-check"></i>
+                                <p class="pdata">05/2002</p>
+                            </li>
+                            <li>
+                                <p>Coca-Cola</p>
+                                <i class="fa fa-refresh"></i>
+                                <p class="pdata">08/2005</p>
+                             </li>
+                             <li>
+                                <p>Vivo</p>
+                                <i class="fa fa-times"></i>
+                                <p class="pdata">03/2010</p>
+                             </li>
+                             <li>
+                                <p>Raízen</p>
+                                <i class="fa fa-times"></i>
+                                <p class="pdata">07/2018</p>
+                             </li>
+                        </ul>
+                    </div>
+                <!-- </div> -->
+            </div>
+
+            <div class="minhas-recompensas">
+                <h2>Minhas Recompensas</h2>
+                <h3>Categorias</h3>
+                    <ul class="categorias">
+                        <li>
+                            <img src="img/area-star.png">
+                            <a href=""><p>AREA STAR </p></a>
+                        </li>
+                        <li>
+                            <img src="img/individual-highlight.png">
+                            <a href=""><p>INDIVIDUAL HIGHLIGHT</p></a>
+                        </li>
+                        <li>
+                            <img src="img/team-highlight.png">
+                            <a href=""><p>TEAM HIGHLIGHT</p></a>
+                        </li>
+                        <li>
+                            <img src="img/mission-accomplished.png">
+                            <a href=""><p>YOU ROCK!</p></a>
+                        </li>
+                    </ul>
+                    <ul class="resultado-categorias">
+                        <li>AREA STAR
+                            <img src="img/area-star.png">
+                            <img src="img/area-star.png">
+                            <img src="img/area-star.png">
+                        </li>
+                        <li>INDIVIDUAL HIGHLIGHT
+                            <img src="img/individual-highlight.png">
+                            <img src="img/individual-highlight.png">
+                        </li>
+                        <li>TEAM HIGHLIGHT
+                            <img src="img/team-highlight.png">
+                            <img src="img/team-highlight.png">
+                            <img src="img/team-highlight.png">
+                        </li>
+                        <li>YOU ROCK!
+                            <img src="img/kaizen.png">
+                            <img src="img/mission-accomplished.png">
+                            <img src="img/client-transformation.png">
+                            <img src="img/client-satisfaction.png">
+                            <img src="img/sustainability.png">
+                            <img src="img/teamwork.png">
+                            <img src="img/resilience.png">
+                        </li>
+                    </ul>
+            </div>
+            <div class="time">
+                <h1>Time</h1>
+            </div>
+
+            </div>
+        
+
+
+
+
     </main>
     <footer></footer>
 </body>

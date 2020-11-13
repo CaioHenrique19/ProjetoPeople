@@ -1,0 +1,125 @@
+.caixa-principal-perfil{
+   /* border: 2px solid #000000;*/
+    width: 65%;
+    height: 1150px;
+    position: relative;
+    float: right;
+    margin: 0.3%;
+}
+
+/* .caixa-principal-perfil div{ 
+    border: 2px solid #8303fa;
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    display: block;
+    float: right;
+    margin: 2%;
+    background-color: #ffffff;
+}*/
+
+h2{
+    margin-top: 3%;
+    text-align: center;
+    font-size: 30px;
+}
+h3{
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.sobre-mim{
+    height: 200px;
+}
+.biografia{
+    height: 320px;
+    border: 2px solid #8303fa;
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    display: block;
+    float: right;
+    margin: 2%;
+    background-color: #ffffff;
+}
+.linha-do-tempo{
+    height: 200px;
+    border: 2px solid #8303fa;
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    display: block;
+    float: right;
+    margin: 2%;
+    background-color: #ffffff;
+}
+.minhas-recompensas{
+    height: 850px;
+    border: 2px solid #8303fa;
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    display: block;
+    float: right;
+    margin: 2%;
+    background-color: #ffffff;
+}
+
+
+/*Espaço ´para as configurações das recompensas*/
+.time{
+    height: 200px;
+    border: 2px solid #8303fa;
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    display: block;
+    float: right;
+    margin: 2%;
+    background-color: #ffffff;
+}
+
+
+
+
+
+.categorias li{
+	display: inline-block;
+	text-align: center;
+	width: 15%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+}
+.categorias img{
+    width: 80%;
+    height: 80%;
+    display: inline-block;
+}
+
+.resultado-categorias li{
+    padding: 15px 20px;
+    vertical-align: middle;  
+}
+.resultado-categorias img{
+    width: 10%;
+    height: 10%;
+    display: inline-block;
+    margin: 1%;
+    vertical-align: middle; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
