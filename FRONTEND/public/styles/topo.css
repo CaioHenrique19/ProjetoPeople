@@ -1,0 +1,102 @@
+@charset "utf-08";
+*{
+    margin:0;
+    padding:0;
+}
+.principal{
+    margin:0 auto;
+    width: 1024px;  
+    
+}
+.topo{
+    width: 100%;
+    height: 10%;
+    min-height:10%;
+    float:left;
+  
+}
+.topo #img-logo{
+    width: 30%;
+    height: 10%;
+    float: left;
+    
+}
+.barraPesquisaTopo{
+    width: 96%;
+    height: 50%;
+    
+}
+ #pesquisarTopo{
+    width: 34%;
+    height: 10%;
+    float: left ;
+    margin-top: 2%;
+    border-radius: 5%;
+   margin-left: 5%;
+}
+ #btnLupaTopo{
+    width:3%;
+    height:3%;
+    float: left;
+    margin-top: 3%;
+    margin-left: 1%;
+   
+}
+#btnLupaTopo:hover{
+    width:2%;
+    height:2%;
+    float: left;
+    margin-top: 3%;
+    border: 2px solid #000000;
+    border-radius:50%;
+    padding:0.2%;
+}
+.logout{
+    width: 30%;
+    height: 10%;
+    padding:1%;
+   float: right;
+   
+    
+}   
+.logout-logout{
+    width: 90%;
+    height: 5%;
+     
+}
+#logoutTopo{    
+   width: 20%;
+   height: 10%;
+   border-radius: 50%;
+   float: right; 
+}
+#editarperfil{
+    width:40%;
+    height: 10%;
+    margin-top: 9%;
+    padding:1%;
+    margin-left: 5%; 
+    float: left;
+    font-size:15px;
+    text-align: end;
+}
+.traco{
+    width: 1%;
+    height: 10%;
+    padding:1%;
+    margin-top: 9%;
+    float: left;
+    
+}
+#logoutlogout{
+    height: 10%;
+    padding: 1%;
+    margin-top: 9%;
+    float: left;
+    font-size:15px;
+
+}
+
+
+
+

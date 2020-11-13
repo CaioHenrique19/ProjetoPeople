@@ -5,6 +5,7 @@
 - https://www.npmjs.com/package/json-server
 - https://www.npmjs.com/package/body-parser
 - https://www.npmjs.com/package/got
+- https://www.npmjs.com/package/nunjucks
 
 ----------------------------------------------------------------
 

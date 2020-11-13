@@ -1,12 +1,23 @@
 const express = require('express')
 const server = express()
 const bodyParser = require('body-parser')
+const nunjucks = require('nunjucks')
 const porta = 3000
 const got = require('got')
 
+
+server.use(express.static("FRONTEND/public"))
 server.use(bodyParser.json())
 server.use(bodyParser.urlencoded({extended: true}))
 
+
+nunjucks.configure('FRONTEND/src', {
+    autoescape: true,
+    express: server,
+    watch: true,
+})
+
+server.set('view engine', '.html')
 
 //GET PERSON
 async function getPerson(name){
@@ -69,11 +80,31 @@ async function changePerson(id,body){
     }
 }
 
+server.get('/', (req, res) =>{
+    return res.render('../src/perfil.html')
+   
+})
 
 server.get('/people', async(req, res) =>{
 
-    const result = await listPeople()
-    res.send(result)
+    const  result = await listPeople()
+    return res.render('../src/perfil.html',{
+        nameEmployee: result[0].name,
+        bp: result[0].bp.firstNameCoach,
+        coach: result[0].coach.firstNameCoach,
+        contact: result[0].contact,
+        pdm: result[0].pdm.firstNameCoach,
+        biograph: result[0].biograph,
+        nickName: result[0].nickName,
+        locateBuilding: result[0].cityBase.locationCityBase,
+        emailEmployee: result[0].email,
+        loginEmployee: result[0].login,
+        companyEmployee: result[0].role.nameRole,
+        teamEmployee: result[0].team[0].firstNameTeam,
+        baseEmployee: result[0].cityBase.nameCityBase,
+        acronymCityBaseEmployee: result[0].cityBase.acronymCityBase,
+        acronymCityBaseEmployee: result[0].cityBase.acronymCityBase
+    })
 })
 
 server.get('/people/:name', async(req, res) =>{

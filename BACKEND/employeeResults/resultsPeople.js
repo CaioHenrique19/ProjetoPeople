@@ -17,10 +17,12 @@ function generatePeople(){
     for(let id = 0; id < 10; id++){
 
         searchResults.push({
+            "id": id,
             "name": faker.name.firstName(),
             "login": faker.name.prefix(),
             "nickName": faker.name.suffix(),
             "email": faker.internet.email(),
+            "contact": faker.phone.phoneNumber(),
             "admission": faker.random.number(),
             "admissionReal": faker.random.number() ,
             "role":{
