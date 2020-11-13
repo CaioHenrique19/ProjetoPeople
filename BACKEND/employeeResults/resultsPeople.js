@@ -16,7 +16,6 @@ function generatePeople(){
 
     for(let id = 0; id < 10; id++){
 
-        
         searchResults.push({
             "id":id,
             "login": faker.name.prefix(),

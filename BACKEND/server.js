@@ -8,6 +8,7 @@ server.use(bodyParser.json())
 server.use(bodyParser.urlencoded({extended: true}))
 
 
+//GET PERSON
 async function getPerson(id){
     try {
         const response = await got('http://localhost:3333/searchResults')  
@@ -18,10 +19,33 @@ async function getPerson(id){
 }
 
 
-async function insertPerson(person){
+//GET PEOPLE
+async function listPeople(){
+    try {
+        const response = await got('http://localhost:3333/searchResults')  
+        return JSON.parse(response.body)
+    } catch (err) {
+        console.log(err.response.body)
+    }
+}
+
+//POST
+async function insertPerson(id){
     try {
         const response = await got.post('http://localhost:3333/searchResults', {
             json: person,
+            responseType: 'json'
+        })
+        return JSON.parse(response.data)[id]
+    } catch (err) {
+        console.log(err.response)
+    }
+}
+
+//DELETE
+async function deletePerson(id){
+    try {
+        const response = await got.delete(`http://localhost:3333/searchResults/${id}`, {
             responseType: 'json'
         })
         return JSON.parse(response.data)
@@ -30,13 +54,16 @@ async function insertPerson(person){
     }
 }
 
-
-async function listPeople(){
+//PUT
+async function changePerson(id,body){
     try {
-        const response = await got('http://localhost:3333/searchResults')  
-        return JSON.parse(response.body)
+        const response = await got.put(`http://localhost:3333/searchResults/${id}`, {
+            json: body,
+            responseType: 'json'
+        })
+        return JSON.parse(response.data)
     } catch (err) {
-        console.log(err.response.body)
+        console.log(err.response)
     }
 }
 
@@ -58,6 +85,17 @@ server.post('/people', async (req, res) =>{
     res.send(result)
 })
 
+server.delete('/people/:id', async (req, res) =>{
+    const result = await deletePerson(req.params.id)
+    res.send(result)
+    
+})
+
+server.put('/people/:id', async (req, res) =>{
+    const result = await changePerson(req.params.id, req.body)
+    res.send(result)
+    
+})
 
 server.listen(porta, ()=>{
     console.log(`iniciado ${porta}`)
