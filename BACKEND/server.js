@@ -13,12 +13,13 @@ async function getPerson(name){
     try {
         const response = await got(`http://localhost:3333/searchResults`)
         return JSON.parse(response.body).filter((person) =>{
-            return person.name.toUpercase() === name.toUpercase()
+            return person.name === name
         })
     } catch (err) {
         console.log(err.response.body)
     }
 }
+
 
 //GET PEOPLE
 async function listPeople(){
