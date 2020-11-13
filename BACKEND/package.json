@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "npm run backend",
+    "backend": "nodemon server.js ",
+    "api": "npx json-server --watch -p 3333 employeeResults/resultsPeople.js "
   },
   "author": "CaioHenrique",
   "license": "ISC",
