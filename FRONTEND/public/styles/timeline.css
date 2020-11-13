@@ -1,0 +1,132 @@
+@charset "utf-08";
+*{
+    margin:0;
+    padding:0;
+}
+.principal{
+    margin:0 auto;
+    width: 1024px;
+    height: 800px;
+}
+.hahaha{
+    width: 100%;
+    margin-left: 30%;
+    height: 100%;
+}
+.topo{
+    width: 100%;
+    height: 10%;
+    border:2px solid #000000; 
+}
+.card-perfil{
+    width:30%;
+    height:75%;
+    border:2px solid #000000;
+    float: left;
+} 
+.sobre-mim{
+    width: 70%;
+    height: 10%;
+    border:2px solid #000000;
+    float: left;
+}
+.biografia{
+    width: 70%;
+    height: 10%;
+    border:2px solid #000000;
+    float: left;
+}
+.timeline{
+    width: 70%;
+    height: 30%;
+    border:2px solid #000000;
+    float: left;
+    background-image:url("back-img");
+    background-size:cover;    
+    background-position: center;
+    font-family:sans-serif;
+    color:#01ab97;
+    
+}
+.recompensas{
+    width: 70%;
+    height: 10%;
+    border:2px solid #000000;
+    float: left;
+}
+.time{
+    width: 70%;
+    height: 13%;
+    border:2px solid #000000;
+    float: left;
+}
+.progress{
+   margin-left:30% auto;
+   margin-top:8%;
+ 
+}
+.progress img{
+    width: 35%;
+    margin-bottom: 10%;
+}
+
+ul{
+    text-align: center;
+}
+ul li{
+    display: inline-block;
+    width: 15%;
+    position: relative;
+}
+
+
+
+ul li .fa{
+    background: #ccc;
+    width: 8%;
+    height: 8%;
+    color:#fff;
+    border-radius:50%;
+    padding: 5%;
+    
+}
+ul li .fa::after{
+    content:'';
+    background:rgb(88, 85, 85);
+    height:2%;
+    width:105%;
+    display:block;
+    position:absolute;
+    left:0;
+    top:68%;
+    z-index:-1;
+}
+
+ul li:nth-child(3) .fa{
+    background:#148e14;
+}
+ul li:nth-child(3) .fa::after{
+    background:#148e14;
+}
+ul li:nth-child(1) .fa,
+ul li:nth-child(2) .fa
+{
+    background:#60aa97;/*#20bec6*/}
+
+
+    ul li:nth-child(1) .fa::after,
+    ul li:nth-child(2) .fa::after
+
+
+{
+background:#60aa97;  /*#ed1941*/  
+
+}
+
+ul li:first-child .fa::after{
+    width: 100%;
+    left:10%;
+}
+ul li:last-child .fa::after{
+    width:100%;
+}
