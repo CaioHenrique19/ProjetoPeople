@@ -9,15 +9,16 @@ server.use(bodyParser.urlencoded({extended: true}))
 
 
 //GET PERSON
-async function getPerson(id){
+async function getPerson(name){
     try {
-        const response = await got('http://localhost:3333/searchResults')  
-        return JSON.parse(response.body)[id]
+        const response = await got(`http://localhost:3333/searchResults`)
+        return JSON.parse(response.body).filter((person) =>{
+            return person.name.toUpercase() === name.toUpercase()
+        })
     } catch (err) {
         console.log(err.response.body)
     }
 }
-
 
 //GET PEOPLE
 async function listPeople(){
@@ -30,13 +31,13 @@ async function listPeople(){
 }
 
 //POST
-async function insertPerson(id){
+async function insertPerson(person){
     try {
         const response = await got.post('http://localhost:3333/searchResults', {
             json: person,
             responseType: 'json'
         })
-        return JSON.parse(response.data)[id]
+        return JSON.parse(response.data)
     } catch (err) {
         console.log(err.response)
     }
@@ -74,9 +75,9 @@ server.get('/people', async(req, res) =>{
     res.send(result)
 })
 
-server.get('/people/:id', async(req, res) =>{
-
-    const result = await getPerson(req.params.id)
+server.get('/people/:name', async(req, res) =>{
+    
+    const result = await getPerson(req.params.name)
     res.send(result)
 })
 
