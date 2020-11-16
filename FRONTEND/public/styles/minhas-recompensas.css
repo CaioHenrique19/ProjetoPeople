@@ -1,22 +1,11 @@
 .caixa-principal-perfil{
-   /* border: 2px solid #000000;*/
+    /* border: 2px solid #000000; */
     width: 65%;
-    height: 1150px;
+    height: 2140px;
     position: relative;
     float: right;
     margin: 0.3%;
 }
-
-/* .caixa-principal-perfil div{ 
-    border: 2px solid #8303fa;
-    width: 100%;
-    border-radius: 15px;
-    position: relative;
-    display: block;
-    float: right;
-    margin: 2%;
-    background-color: #ffffff;
-}*/
 
 h2{
     margin-top: 3%;
@@ -32,56 +21,39 @@ h3{
 }
 .biografia{
     height: 320px;
-    border: 2px solid #8303fa;
+    /* border: 2px solid #8303fa; */
     width: 100%;
     border-radius: 15px;
     position: relative;
     display: block;
     float: right;
-    margin: 2%;
     background-color: #ffffff;
+    margin: 0.1% 2% 0.5% 2%;
 }
 .linha-do-tempo{
     height: 200px;
-    border: 2px solid #8303fa;
+    /* border: 2px solid #8303fa; */
     width: 100%;
     border-radius: 15px;
     position: relative;
     display: block;
     float: right;
-    margin: 2%;
+    margin: 0.1% 2% 0.5% 2%;
     background-color: #ffffff;
 }
+
+/* Minhas recompensas */
 .minhas-recompensas{
     height: 850px;
-    border: 2px solid #8303fa;
+    /* border: 2px solid #8303fa; */
     width: 100%;
     border-radius: 15px;
     position: relative;
     display: block;
     float: right;
-    margin: 2%;
+    margin: 0.1% 2% 0.5% 2%;
     background-color: #ffffff;
 }
-
-
-/*Espaço ´para as configurações das recompensas*/
-.time{
-    height: 200px;
-    border: 2px solid #8303fa;
-    width: 100%;
-    border-radius: 15px;
-    position: relative;
-    display: block;
-    float: right;
-    margin: 2%;
-    background-color: #ffffff;
-}
-
-
-
-
-
 .categorias li{
 	display: inline-block;
 	text-align: center;
@@ -95,7 +67,6 @@ h3{
     height: 80%;
     display: inline-block;
 }
-
 .resultado-categorias li{
     padding: 15px 20px;
     vertical-align: middle;  
@@ -107,6 +78,35 @@ h3{
     margin: 1%;
     vertical-align: middle; 
 }
+
+/* Time/Squad */
+.time{
+    height: 500px;
+    /* border: 2px solid #8303fa; */
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    display: block;
+    float: right;
+    margin: 0.1% 2% 0.5% 2%;
+    background-color: #ffffff;
+}
+
+/* Rodapé */
+.rodape{
+    display: inline-block;
+}
+.rodape img{
+    width: 20%;
+    height: 20%;
+    margin-left: 40%;   
+}
+
+
+
+
+
+
 
 
 
