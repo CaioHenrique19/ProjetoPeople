@@ -5,51 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Perfil - Card</title>
-    <link rel="stylesheet" href="styles/topo.css">
-    <link rel="stylesheet" href="styles/topo.css">
-    <link rel="stylesheet" href="styles/style-card-perfil.css">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet"href="styles/timeline.css">
-    <link rel="stylesheet" href="styles/minhas-recompensas.css">
+    <title>Perfil</title>
+
+    <link rel="stylesheet" href="/styles/topo.css">
+    <link rel="stylesheet" href="/styles/style-card-perfil.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet"href="/styles/timeline.css">
+    <link rel="stylesheet" href="/styles/minhas-recompensas.css">
     
-    <link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Poppins ">
+    <link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Poppins">
 
 </head>
 
 <body>
     <header>
-        <!-- <div class="caixa-top"> -->
-            
+
             <div class ="principal">
                 <div class="topo">
                     <div class="img-logo">
-                        <img src="/imagens/Logo.png"id="img-logo">
+                        <img src="/img/Logo.png"id="img-logo">
                     </div>
                     <div class="barraPesquisaTopo">
                         <input type = "text"id="pesquisarTopo"style="height:25px;border-radius:10px; margin-top: 3%; margin-left:1%">
-                        <img src="/imagens/loupe.png"id="btnLupaTopo">
+                        <img src="/img/loupe.png"id="btnLupaTopo">
                     </div>         
                     <div class="logout">
                         <div class=logout-logout>
                             <a href=""id="editarperfil">editar perfil</a>
                             <p class="traco">|</p>
                             <a href=""id="logoutlogout">logout</a>
-                            <img src="/imagens/billPerfil.png"id="logoutTopo">
+                            <img src="/img/billPerfil.png"id="logoutTopo">
                         </div>
                     </div>
                 </div>
             </div>
-        <!-- </div> -->
+
     </header>
     <main>
-        <div class=caixa-card>
 
+        <div class=caixa-card>
             <div class="card">
                 <h1 class="nome">{{nameEmployee}} ({{nickName}})</h1>
                 <p>{{companyEmployee}}</p>
                 <div class="caixa-img">
-                    <img src="">
+                    <img src="img/Bill.png">
                 </div>
 
                 <div class="div-status">
@@ -136,7 +135,7 @@
                         <div class="item">
                             <ul>
                                 <li>
-                                    <p name="nome"><strong>Nome </strong>{{nameEmployee}}</p> 
+                                    <p name="nome"><strong>Nome </strong>{{nameEmployee}}</p>
                                 </li>
                                 <li>
                                     <p name="community"><strong>Comunidade </strong>Diversity</p>
@@ -155,7 +154,7 @@
                                     <p name="pdm"><strong>PDM </strong>{{pdm}}</p>
                                 </li>
                                 <li>
-                                    <p name="bp"><strong>BP </strong>{{bp}}</p>
+                                    <p name="bp"><strong>BP </strong>{{bp}}/p>
                                 </li>
                             </ul>
                         </div>
@@ -216,7 +215,8 @@
 
             <div class="minhas-recompensas">
                 <h2>Minhas Recompensas</h2>
-                <h3>Categorias</h3>
+                <hr>
+                <h3 class="title">Categorias</h3>
                     <ul class="categorias">
                         <li>
                             <img src="img/area-star.png">
@@ -261,18 +261,91 @@
                         </li>
                     </ul>
             </div>
+
             <div class="time">
-                <h1>Time</h1>
+                <div class="wrapper3">
+                    <div>
+                        <h2 class="smtitle">Minha Equipe</h2>
+                    </div>
+                    <hr>
+                    <div class="container">
+                            <div class="squad">
+                                <img src="/img/equipe/cbarcellos.jpg" name="squad-photo">
+                                <p class="sqname"><a  href="https://people.cit.com.br/profile/cbarcellos">
+                                    Carlos Barcellos</a></p>
+                            </div>
+                            <div class="squad">
+                                <img src="/img/equipe/dcereda.jpg" name="squad-photo">
+                                <p class="sqname"><a  href="https://people.cit.com.br/profile/dcereda">
+                                    Danilo Cereda</a></p>
+                            </div>
+                            <div class="squad">
+                                <img src="/img/equipe/matheushd.jpg" name="squad-photo">
+                                <p class="sqname"><a  href="https://people.cit.com.br/profile/matheushd">
+                                    Matheus Henrick</a></p>
+                            </div>
+                            <div class="squad">
+                                <img src="/img/equipe/rgibin.jpg" name="squad-photo">
+                                <p class="sqname"><a  href="https://people.cit.com.br/profile/rgibin">
+                                    Rodrigo Gibin</a></p>
+                            </div>
+                            <div class="squad">
+                                <img src="/img/equipe/cbarcellos.jpg" name="squad-photo">
+                                <p class="sqname"><a  href="https://people.cit.com.br/profile/cbarcellos">
+                                    Carlos Barcellos</a></p>
+                            </div>
+                            <div class="squad">
+                                <img src="/img/equipe/dcereda.jpg" name="squad-photo">
+                                <p class="sqname"><a  href="https://people.cit.com.br/profile/dcereda">
+                                    Danilo Cereda</a></p>
+                            </div>
+                            <div class="squad">
+                                <img src="/img/equipe/matheushd.jpg" name="squad-photo">
+                                <p class="sqname"><a  href="https://people.cit.com.br/profile/matheushd">
+                                    Matheus Henrick</a></p>
+                            </div>
+                            <div class="squad">
+                                <img src="/img/equipe/rgibin.jpg" name="squad-photo">
+                                <p class="sqname"><a  href="https://people.cit.com.br/profile/rgibin">
+                                    Rodrigo Gibin</a></p>
+                            </div>
+                            <div class="squad">
+                                <img src="/img/equipe/cbarcellos.jpg" name="squad-photo">
+                                <p class="sqname"><a  href="https://people.cit.com.br/profile/cbarcellos">
+                                    Carlos Barcellos</a></p>
+                            </div>
+                            <div class="squad">
+                                <img src="/img/equipe/dcereda.jpg" name="squad-photo">
+                                <p class="sqname"><a  href="https://people.cit.com.br/profile/dcereda">
+                                    Danilo Cereda</a></p>
+                            </div>
+                            <div class="squad">
+                                <img src="/img/equipe/matheushd.jpg" name="squad-photo">
+                                <p class="sqname"><a  href="https://people.cit.com.br/profile/matheushd">
+                                    Matheus Henrick</a></p>
+                            </div>
+                            <div class="squad">
+                                <img src="/img/equipe/rgibin.jpg" name="squad-photo">
+                                <p class="sqname"><a  href="https://people.cit.com.br/profile/rgibin">
+                                    Rodrigo Gibin</a></p>
+                            </div>
+                    </div>
+                </div>
             </div>
 
-            </div>
+        </div>
         
-
-
-
-
     </main>
-    <footer></footer>
+    <footer>
+
+        <div class="rodape">
+            <div>
+                <img src="img/Logo_CI&T_CMYK.png">
+            </div>
+            
+        </div>
+        
+    </footer>
 </body>
 
 </html>
