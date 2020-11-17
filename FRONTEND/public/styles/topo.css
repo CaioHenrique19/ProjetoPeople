@@ -5,9 +5,8 @@
 }
 .principal{
     margin:0 auto;
-    width: 1024px;
- 
-   
+    width: 1024px;  
+    
 }
 .topo{
     width: 100%;
@@ -17,59 +16,59 @@
   
 }
 .topo #img-logo{
-    width: 25%;
+    width: 30%;
     height: 10%;
     float: left;
-   
+    
 }
-.barraPesquisarTopo{
-    width: 100%;
+.barraPesquisaTopo{
+    width: 96%;
+    height: 50%;
     
 }
  #pesquisarTopo{
-    width: 30%;
+    width: 34%;
     height: 10%;
     float: left ;
     margin-top: 2%;
     border-radius: 5%;
-   margin-left: 1%;
+   margin-left: 5%;
 }
  #btnLupaTopo{
     width:3%;
     height:3%;
     float: left;
-    margin-top: 2.5%;
+    margin-top: 3%;
+    margin-left: 1%;
    
 }
 #btnLupaTopo:hover{
-    width:3%;
-    height:3%;
+    width:2%;
+    height:2%;
     float: left;
-    margin-top: 2%;
+    margin-top: 3%;
     border: 2px solid #000000;
     border-radius:50%;
     padding:0.2%;
-    
-   
 }
 .logout{
-    width: 35%;
+    width: 30%;
     height: 10%;
     padding:1%;
    float: right;
+   
     
 }   
 .logout-logout{
-    width: 60%;
-    height: 20%;    
+    width: 90%;
+    height: 5%;
+     
 }
 #logoutTopo{    
-   width: 25%;
+   width: 20%;
    height: 10%;
    border-radius: 50%;
-   float: right;
-   
-   
+   float: right; 
 }
 #editarperfil{
     width:40%;
@@ -80,8 +79,6 @@
     float: left;
     font-size:15px;
     text-align: end;
-    
-    
 }
 .traco{
     width: 1%;
@@ -91,7 +88,6 @@
     float: left;
     
 }
-
 #logoutlogout{
     height: 10%;
     padding: 1%;
@@ -100,7 +96,6 @@
     font-size:15px;
 
 }
-
 
 
 

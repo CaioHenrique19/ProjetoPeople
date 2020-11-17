@@ -1,0 +1,125 @@
+.caixa-principal-perfil{
+    /* border: 2px solid #000000; */
+    width: 65%;
+    height: 2140px;
+    position: relative;
+    float: right;
+    margin: 0.3%;
+}
+
+h2{
+    margin-top: 3%;
+    text-align: center;
+    font-size: 30px;
+}
+h3{
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.sobre-mim{
+    height: 200px;
+}
+.biografia{
+    height: 320px;
+    /* border: 2px solid #8303fa; */
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    display: block;
+    float: right;
+    background-color: #ffffff;
+    margin: 0.1% 2% 0.5% 2%;
+}
+.linha-do-tempo{
+    height: 200px;
+    /* border: 2px solid #8303fa; */
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    display: block;
+    float: right;
+    margin: 0.1% 2% 0.5% 2%;
+    background-color: #ffffff;
+}
+
+/* Minhas recompensas */
+.minhas-recompensas{
+    height: 850px;
+    /* border: 2px solid #8303fa; */
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    display: block;
+    float: right;
+    margin: 0.1% 2% 0.5% 2%;
+    background-color: #ffffff;
+}
+.categorias li{
+	display: inline-block;
+	text-align: center;
+	width: 15%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+}
+.categorias img{
+    width: 80%;
+    height: 80%;
+    display: inline-block;
+}
+.resultado-categorias li{
+    padding: 15px 20px;
+    vertical-align: middle;  
+}
+.resultado-categorias img{
+    width: 10%;
+    height: 10%;
+    display: inline-block;
+    margin: 1%;
+    vertical-align: middle; 
+}
+
+/* Time/Squad */
+.time{
+    height: 500px;
+    /* border: 2px solid #8303fa; */
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    display: block;
+    float: right;
+    margin: 0.1% 2% 0.5% 2%;
+    background-color: #ffffff;
+}
+
+/* Rodapé */
+.rodape{
+    display: inline-block;
+}
+.rodape img{
+    width: 20%;
+    height: 20%;
+    margin-left: 40%;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
