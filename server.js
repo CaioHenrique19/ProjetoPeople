@@ -22,7 +22,7 @@ server.set('view engine', '.html')
 //GET PERSON
 async function getPerson(name){
     try {
-        const response = await got(`http://localhost:3333/searchResults`)
+        const response = await got(`http://localhost:3333/people`)
         return JSON.parse(response.body).filter((person) =>{
             return person.name === name
         })
@@ -35,7 +35,7 @@ async function getPerson(name){
 //GET PEOPLE
 async function listPeople(){
     try {
-        const response = await got('http://localhost:3333/searchResults')  
+        const response = await got('http://localhost:3333/people')  
         return JSON.parse(response.body)
     } catch (err) {
         console.log(err.response.body)
@@ -45,7 +45,7 @@ async function listPeople(){
 //POST
 async function insertPerson(person){
     try {
-        const response = await got.post('http://localhost:3333/searchResults', {
+        const response = await got.post('http://localhost:3333/people', {
             json: person,
             responseType: 'json'
         })
@@ -58,7 +58,7 @@ async function insertPerson(person){
 //DELETE
 async function deletePerson(id){
     try {
-        const response = await got.delete(`http://localhost:3333/searchResults/${id}`, {
+        const response = await got.delete(`http://localhost:3333/people/${id}`, {
             responseType: 'json'
         })
         return JSON.parse(response.data)
@@ -70,7 +70,7 @@ async function deletePerson(id){
 //PUT
 async function changePerson(id,body){
     try {
-        const response = await got.put(`http://localhost:3333/searchResults/${id}`, {
+        const response = await got.put(`http://localhost:3333/people/${id}`, {
             json: body,
             responseType: 'json'
         })
