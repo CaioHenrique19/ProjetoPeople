@@ -66,7 +66,7 @@
                             <div>
                                 <img src="img/gmail.png">
                                 <div class="div-texto">
-                                    <a href=""><p>{{emailEmployee}}</p></a>
+                                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to={{emailEmployee}}" target="_blank"><p>{{emailEmployee}}</p></a>
                                 </div>
                             </div>  
                         </li>
@@ -98,7 +98,7 @@
                             <div>
                                 <img src="img/tech-gallery.png" class="tech-gallery">
                                 <div class="div-texto">
-                                    <a href=""><p>{{loginEmployee}}</p></a>
+                                    <a href="https://techgallery.ciandt.com/#/people/{{loginEmployee}}" target="_blank"><p>{{loginEmployee}}</p></a>
                                 </div>
                             </div>
                         </li>
@@ -218,37 +218,65 @@
                 <hr>
                 <h3 class="title">Categorias</h3>
                     <ul class="categorias">
-                        <li>
+<li>
+                            <div class="notificacao"> 
+                                <p>{{qtdAwardAreaStar}}</p>
+                            </div>
                             <img src="img/area-star.png">
                             <a href=""><p>AREA STAR </p></a>
                         </li>
                         <li>
+                            <div class="notificacao"> 
+                                <p>{{qtdAwardIndividualHighlight}}</p>
+                            </div>
                             <img src="img/individual-highlight.png">
                             <a href=""><p>INDIVIDUAL HIGHLIGHT</p></a>
                         </li>
                         <li>
+                            <div class="notificacao"> 
+                                <p>{{qtdAwardHighlight}}</p>
+                            </div>
                             <img src="img/team-highlight.png">
                             <a href=""><p>TEAM HIGHLIGHT</p></a>
                         </li>
                         <li>
+                            <div class="notificacao"> 
+                                <p>{{qtdAwardYouRock}}</p>
+                            </div>
                             <img src="img/mission-accomplished.png">
                             <a href=""><p>YOU ROCK!</p></a>
                         </li>
                     </ul>
                     <ul class="resultado-categorias">
                         <li>AREA STAR
+                    {%if qtdAwardAreaStar > 0%}
+                        {% for areaStar in totalAwardAreaStar %}
                             <img src="img/area-star.png">
-                            <img src="img/area-star.png">
-                            <img src="img/area-star.png">
+                        {% endfor %} 
+                    {%else%}
+                        <p><h4>Você ainda não possuí awards dessa categoria :(</h4></p>
+                    {% endif %}
                         </li>
+
                         <li>INDIVIDUAL HIGHLIGHT
-                            <img src="img/individual-highlight.png">
-                            <img src="img/individual-highlight.png">
+                        {%if qtdAwardIndividualHighlight > 0%}
+                            {% for indivualHighlight in totalAwardIndividualHighlight %}
+                                <img src="img/individual-highlight.png">
+                            {% endfor %} 
+                        {%else%}
+                        <p><h4>Você ainda não possuí awards dessa categoria :(</h4></p>
+                    {% endif %}
+
                         </li>
+
                         <li>TEAM HIGHLIGHT
+                    {%if qtdAwardHighlight > 0%}
+                        {% for highLight in totalAwardHighlight %}
                             <img src="img/team-highlight.png">
-                            <img src="img/team-highlight.png">
-                            <img src="img/team-highlight.png">
+                        {% endfor %} 
+                    {%else%}
+                        <p><h4>Você ainda não possuí awards dessa categoria :(</h4></p>
+                         {% endif %}
                         </li>
                         <li>YOU ROCK!
                             <img src="img/kaizen.png">

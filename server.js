@@ -4,6 +4,7 @@ const bodyParser = require('body-parser')
 const nunjucks = require('nunjucks')
 const porta = 3000
 const got = require('got')
+const { totalmem } = require('os')
 
 
 server.use(express.static("FRONTEND/public"))
@@ -88,12 +89,38 @@ server.get('/', (req, res) =>{
 server.get('/people', async(req, res) =>{
 
     const  result = await listPeople()
+
+    let totalAwardHighlight = result[0].awardsCategories.filter((awardTeam) =>{
+        return awardTeam.nameAwardsCategories === 'Team Highlight'
+    })
+    
+    let qtdAwardHighlight = totalAwardHighlight.length
+
+    let totalAwardAreaStar= result[0].awardsCategories.filter((awardTeam) =>{
+        return awardTeam.nameAwardsCategories === 'Area Star'
+    })
+
+    let qtdAwardAreaStar =  totalAwardAreaStar.length
+
+    let totalAwardYouRock = result[0].awardsCategories.filter((awardTeam) =>{
+        return awardTeam.nameAwardsCategories === 'You Rock'
+    })
+
+    let qtdAwardYouRock=  totalAwardYouRock.length
+
+    let totalAwardIndividualHighlight = result[0].awardsCategories.filter((awardTeam) =>{
+        return awardTeam.nameAwardsCategories === 'Individual Highlight'
+    })
+    
+    let qtdAwardIndividualHighlight =  totalAwardIndividualHighlight.length
+
+
     return res.render('../src/perfil.html',{
         nameEmployee: result[0].name,
-        bp: result[0].bp.firstNameCoach,
-        coach: result[0].coach.firstNameCoach,
+        bp: result[0].bp,
+        coach: result[0].coach,
         contact: result[0].contact,
-        pdm: result[0].pdm.firstNameCoach,
+        pdm: result[0].pdm,
         biograph: result[0].biograph,
         nickName: result[0].nickName,
         locateBuilding: result[0].cityBase.locationCityBase,
@@ -103,7 +130,20 @@ server.get('/people', async(req, res) =>{
         teamEmployee: result[0].team[0].firstNameTeam,
         baseEmployee: result[0].cityBase.nameCityBase,
         acronymCityBaseEmployee: result[0].cityBase.acronymCityBase,
-        acronymCityBaseEmployee: result[0].cityBase.acronymCityBase
+        acronymCityBaseEmployee: result[0].cityBase.acronymCityBase,
+        qtdAwardHighlight,
+        qtdAwardAreaStar,
+        qtdAwardYouRock,
+        qtdAwardIndividualHighlight,
+        totalAwardHighlight,
+        totalAwardAreaStar,
+        totalAwardYouRock,
+        totalAwardIndividualHighlight,
+
+
+
+
+
     })
 })
 

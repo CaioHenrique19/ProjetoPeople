@@ -79,6 +79,26 @@ h3{
     vertical-align: middle; 
 }
 
+.resultado-categorias h4{
+    padding-left: 10px;
+}
+
+.notificacao {
+    width: 4%;
+    height: 3%;
+    position: absolute;
+    margin-left: 8%;
+    border-radius: 50%;
+    background-color: #20bec6;
+    border: 2px solid #ffffff;
+}
+.notificacao p{
+    color: #ffffff;
+    font-weight: bolder;
+    padding-top: 7%;
+}
+
+
 /* Time/Squad */
 .time{
     height: 500px;

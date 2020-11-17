@@ -11,4 +11,4 @@
 
 #Run
 - npm start
-- npx json-server --watch -p 3333 resultsPeople.js
+- npx json-server --watch -p 3333 people.json
