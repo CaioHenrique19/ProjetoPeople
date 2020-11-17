@@ -13,7 +13,7 @@
     <link rel="stylesheet"href="/styles/timeline.css">
     <link rel="stylesheet" href="/styles/minhas-recompensas.css">
     
-    <link rel = "stylesheet" href = " https://fonts.googleapis.com/css?family=Poppins ">
+    <link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Poppins">
 
 </head>
 
@@ -23,18 +23,18 @@
             <div class ="principal">
                 <div class="topo">
                     <div class="img-logo">
-                        <img src="/imagens/Logo.png"id="img-logo">
+                        <img src="/img/Logo.png"id="img-logo">
                     </div>
                     <div class="barraPesquisaTopo">
                         <input type = "text"id="pesquisarTopo"style="height:25px;border-radius:10px; margin-top: 3%; margin-left:1%">
-                        <img src="/imagens/loupe.png"id="btnLupaTopo">
+                        <img src="/img/loupe.png"id="btnLupaTopo">
                     </div>         
                     <div class="logout">
                         <div class=logout-logout>
                             <a href=""id="editarperfil">editar perfil</a>
                             <p class="traco">|</p>
                             <a href=""id="logoutlogout">logout</a>
-                            <img src="/imagens/billPerfil.png"id="logoutTopo">
+                            <img src="/img/billPerfil.png"id="logoutTopo">
                         </div>
                     </div>
                 </div>
@@ -45,8 +45,8 @@
 
         <div class=caixa-card>
             <div class="card">
-                <h1 class="nome">Bill Gates (Bill)</h1>
-                <p>Desenvolvedor</p>
+                <h1 class="nome">{{nameEmployee}} ({{nickName}})</h1>
+                <p>{{companyEmployee}}</p>
                 <div class="caixa-img">
                     <img src="img/Bill.png">
                 </div>
@@ -66,7 +66,7 @@
                             <div>
                                 <img src="img/gmail.png">
                                 <div class="div-texto">
-                                    <a href=""><p>billgates@ciandt.com</p></a>
+                                    <a href=""><p>{{emailEmployee}}</p></a>
                                 </div>
                             </div>  
                         </li>
@@ -74,7 +74,7 @@
                             <div>
                                 <img src="img/chat.png">
                                 <div class="div-texto">
-                                    <a href=""><p>Bgates</p></a>
+                                    <a href=""><p>{{loginEmployee}}</p></a>
                                 </div>
                             </div>
                         </li>
@@ -82,7 +82,7 @@
                             <div>
                                 <img src="img/business.png">
                                 <div class="div-texto">
-                                    <p>Bradesco</p>
+                                    <p>{{companyEmployee}}</p>
                                 </div>
                             </div>
                         </li>
@@ -90,7 +90,7 @@
                             <div>
                                 <img src="img/squad.png">
                                 <div class="div-texto">
-                                    <p>Vela</p>
+                                    <p>{{teamEmployee}}</p>
                                 </div>
                             </div>
                         </li>
@@ -98,7 +98,7 @@
                             <div>
                                 <img src="img/tech-gallery.png" class="tech-gallery">
                                 <div class="div-texto">
-                                    <a href=""><p>Bgates</p></a>
+                                    <a href=""><p>{{loginEmployee}}</p></a>
                                 </div>
                             </div>
                         </li>
@@ -106,7 +106,7 @@
                             <div>
                                 <img src="img/placeholder.png">
                                 <div class="div-texto"> 
-                                    <p>BRA - Campinas</p>
+                                    <p>{{baseEmployee}} - {{acronymCityBaseEmployee}}</p>
                                 </div>
                             </div>
                         </li>
@@ -114,7 +114,7 @@
                             <div>
                                 <img src="img/predio-comercial.png">
                                 <div class="div-texto">
-                                    <p> 3º andar - Sala Win - Baia 10</p>
+                                    <p> {{locateBuilding}} </p>
                                 </div>
                             </div>
                         </li>
@@ -135,26 +135,26 @@
                         <div class="item">
                             <ul>
                                 <li>
-                                    <p name="nome"><strong>Nome </strong>Bill Gates</p>
+                                    <p name="nome"><strong>Nome </strong>{{nameEmployee}}</p>
                                 </li>
                                 <li>
                                     <p name="community"><strong>Comunidade </strong>Diversity</p>
                                 </li>
                                 <li>
-                                    <p name="contact"><strong>Contato </strong>+551499437532</p>
+                                    <p name="contact"><strong>Contato </strong>{{contact}}</p>
                                 </li>
                             </ul>
                         </div>
                         <div class="item">
                             <ul>
                                 <li>
-                                    <p name="coach"><strong>Coach/Carrer Advisor </strong>Paul Allen</p>
+                                    <p name="coach"><strong>Coach/Carrer Advisor </strong>{{coach}}</p>
                                 </li>
                                 <li>
-                                    <p name="pdm"><strong>PDM </strong>Brad Smith</p>
+                                    <p name="pdm"><strong>PDM </strong>{{pdm}}</p>
                                 </li>
                                 <li>
-                                    <p name="bp"><strong>BP </strong>Satya Nadella</p>
+                                    <p name="bp"><strong>BP </strong>{{bp}}</p>
                                 </li>
                             </ul>
                         </div>
@@ -172,11 +172,7 @@
                     </div>
                     <div class="biografia-texto">
                         <p class="item2">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-                            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
-                            type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
-                            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum 
-                            passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            {{biograph}}
                         </p>
                     </div>
                 </div>
@@ -184,8 +180,7 @@
 
             <div class="linha-do-tempo">
                 
-                <h1>Linha do Tempo</h1> 
-                    <hr>
+                <!-- <div class="timeline">--><h1>Linha do Tempo</h1> 
                     <div class="progress">
                         <ul>
                             <li>
@@ -215,6 +210,7 @@
                              </li>
                         </ul>
                     </div>
+                <!-- </div> -->
             </div>
 
             <div class="minhas-recompensas">
@@ -224,7 +220,6 @@
                     <ul class="categorias">
                         <li>
                             <img src="img/area-star.png">
-                            </div>
                             <a href=""><p>AREA STAR </p></a>
                         </li>
                         <li>

@@ -1,0 +1,93 @@
+{
+    "login": "dcereda",
+    "name": "DANILO CEREDA",
+    "nickname": "Cereda", 
+    "email": "dcereda@ciandt.com",
+    "admission": 1258941600000,
+    "admissionReal": 1212375600000,
+    "role": {
+        "code": 61,
+        "name": "Project Manager"
+    },
+    "area": {
+        "code": 502,
+        "name": "Vela",
+        "begin": null
+    },
+    "project": {
+        "code": 11266,
+        "name": "Prod_Vela_BR"
+    },
+    "cityBase": {
+        "code": 1,
+        "name": "Campinas",
+        "acronym": "CPS",
+        "location": "1º Andar proximo a entrada"
+    },
+
+    "company": {
+        "code": 1,
+        "name": "CIT Software S.A."
+    },
+    "timeLine":[
+        {
+            "area": "Vela",
+            "project": "Ontap",
+            "team": "Quilmes",
+            "beginDate": 1325383200000
+        },
+        {
+            "area": "Vela",
+            "project": "BEES",
+            "team": "Original", 
+            "beginDate": 1293847200000
+        }
+    ],
+    "team":[
+        {
+            "login": "dcereda",
+            "name": "DANILO CEREDA",
+            "nickname": "Cereda",
+            "picture": "https://citweb.cit.com.br/ipeople/photo?ipeople-photo-token=a33d98c6ed170926bfcfa91aec930574&cdLogin=dcereda"
+        },
+        {
+            "login": "dcereda",
+            "name": "DANILO CEREDA",
+            "nickname": "Cereda",
+            "picture": "https://citweb.cit.com.br/ipeople/photo?ipeople-photo-token=a33d98c6ed170926bfcfa91aec930574&cdLogin=dcereda"
+        }
+    ],
+    "coach": {
+        "login": "mpedroso",
+        "name": "DANILO CEREDA",
+        "nickname": "Cereda"
+    },
+    "pdm": {
+        "login": "rodolfogk",
+        "name": "DANILO CEREDA",
+        "nickname": "Cereda"
+    },
+    "bp": {
+        "login": "abvalle",
+        "name": "DANILO CEREDA",
+        "nickname": "Cereda"
+    },
+    "biograph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rhoncus lectus tellus. Suspendisse in nulla quis nisi pretium elementum. Praesent a ante convallis, scelerisque libero nec, pulvinar est. Pellentesque in nulla sit amet arcu efficitur faucibus. Proin et nisl quis urna sollicitudin consequat. Etiam sed interdum lectus, quis venenatis erat. Maecenas laoreet eros eu ullamcorper tincidunt. Nulla sed quam eu nisl maximus feugiat in vitae mauris. Phasellus sed leo nisl. Suspendisse varius ex nec libero convallis euismod. Aliquam eget cursus diam. Etiam vitae eros vitae ligula vulputate finibus. Maecenas ac nunc cursus, blandit risus vel, vestibulum leo. Nullam sit amet ultricies sem, a ultricies massa.",
+    "avaliable": true,
+    "clientName": "AB-INBEV",
+    "picture": "https://citweb.cit.com.br/ipeople/photo?ipeople-photo-token=a33d98c6ed170926bfcfa91aec930574&cdLogin=dcereda",
+    "awardsCategories": [
+        {
+            "name": "Team Highlight",
+            "icon": "https://citweb.cit.com.br/ipeople/award_icon?id=4",
+            "awards" :[
+                {
+                    "date": 1325383200000,
+                    "year": "2012",
+                    "loginDeliv": null,
+                    "comment": null
+                }
+            ]
+        }
+    ] 
+}
