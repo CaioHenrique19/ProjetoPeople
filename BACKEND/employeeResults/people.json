@@ -586,6 +586,112 @@
            ]
        }
    ] 
+},
+{
+   "login": "annac",
+   "name": "ANNA CAROLINE",
+   "nickname": "Anna", 
+   "email": "annac@ciandt.com",
+   "admission": 1258941600003,
+   "admissionReal": 1212375600003,
+   "role": {
+       "code": 33,
+       "name": "Developer"
+   },
+   "area": {
+       "code": 503,
+       "name": "Purple",
+       "begin": null
+   },
+   "project": {
+       "code": 11233,
+       "name": "Prod_Purple_BR"
+   },
+   "cityBase": {
+       "code": 1,
+       "name": "São Paulo",
+       "acronym": "SP",
+       "location": "4º Andar proximo da sala de reunião 3"
+   },
+
+   "company": {
+       "code": 1,
+       "name": "CIT Software S.A."
+   },
+   "timeLine":[
+       {
+           "area": "Vela",
+           "project": "AB-INBEV",
+           "team": "Velis", 
+           "beginDate": 1293947200033
+       },
+       {
+           "area": "Red",
+           "project": "Bradesco",
+           "team": "Fenix", 
+           "beginDate": 1293847200033
+       },
+        {
+           "area": "Purple",
+           "project": "O Boticario",
+           "team": "Super Choque",
+           "beginDate": 1325383200033
+       }
+        
+   ],
+   "team":[
+       {
+           "login": "annac",
+           "name": "ANNA CAROLINE",
+           "nickname": "Anna",
+           "picture": "https://citweb.cit.com.br/ipeople/photo?ipeople-photo-token=a33d98c6ed170926bfcfa91aec930574&cdLogin=annac"
+       },
+       {
+           "login": "annac",
+           "name": "ANNA CAROLINE",
+           "nickname": "annac",
+           "picture": "https://citweb.cit.com.br/ipeople/photo?ipeople-photo-token=a33d98c6ed170926bfcfa91aec930574&cdLogin=annac"
+       },
+        {
+           "login": "annac",
+           "name": "ANNA CAROLINE",
+           "nickname": "annac",
+           "picture": "https://citweb.cit.com.br/ipeople/photo?ipeople-photo-token=a33d98c6ed170926bfcfa91aec930574&cdLogin=annac"
+       }
+   ],
+   "coach": {
+       "login": "mpedroso",
+       "name": "ANNA CAROLINE",
+       "nickname": "Anna"
+   },
+   "pdm": {
+       "login": "rodolfogk",
+       "name": "ANNA CAROLINE",
+       "nickname": "Anna"
+   },
+   "bp": {
+       "login": "abvalle",
+       "name": "ANNA CAROLINE",
+       "nickname": "Anna"
+   },
+   "biograph": "Olá, me chamo Anna, tenho 23 anos, sou formada em Análise e Desenvolvimento de Sistemas e graduanda em Engenharia da Computação. Amo dança e artes no geral, sou apaixonada pela mensagem passada pela arte e pela dança, faz com que me sinta livre. Outra paixão é a tecnologia, sou fascinada pela forma que ela se atualiza constantemente e isso só aumenta a minha curiosidade em aprender. Sou uma pessoa focada, determinada e otimista. Acredito que otimismo e o trabalho duro é suficiente para superar qualquer obstáculo e entregar qualquer tarefa.",
+   "avaliable": true,
+   "clientName": "O Boticario",
+   "picture": "https://citweb.cit.com.br/ipeople/photo?ipeople-photo-token=a33d98c6ed170926bfcfa91aec930574&cdLogin=annac",
+   "awardsCategories": [
+       {
+           "name": "Team Highlight",
+           "icon": "https://citweb.cit.com.br/ipeople/award_icon?id=4",
+           "awards" :[
+               {
+                   "date": 1325383200000,
+                   "year": "2012",
+                   "loginDeliv": null,
+                   "comment": null
+               }
+           ]
+       }
+   ] 
 }
 
    ]
