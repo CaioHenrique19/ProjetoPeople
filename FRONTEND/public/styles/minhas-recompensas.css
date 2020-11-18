@@ -98,6 +98,23 @@ h3{
     padding-top: 7%;
 }
 
+.notificacao-menor{
+    width: 3.5%;
+    height: 2.5%;
+    position: absolute;
+    margin-left: 7%;
+    border-radius: 50%;
+    background-color: #20bec6;
+    border: 2px solid #ffffff;
+} 
+.notificacao-menor p{
+    color: #ffffff;
+    font-weight: bolder;
+    padding-top: 1%;
+    padding-left: 30%;
+}
+
+
 
 /* Time/Squad */
 .time{

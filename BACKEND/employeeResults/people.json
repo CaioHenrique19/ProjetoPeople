@@ -1,708 +1,1223 @@
-     {
-        "people":[{
-         "id": 0,
-         "name": "Caio Henrique",
-         "login": "caiohenrique",
-         "nickName": "Caio",
-         "email": "caiohenrique@ciandt.com",
-         "contact": "13 991761171",
-         "admission": 1258941600000,
-         "admissionReal": 1212375600000,
-         "role": {
-            "codeRole": 555,
-            "nameRole": "Alta produto"
-         },
-         "area": {
-            "codeArea": 323,
-            "nameArea": "Bradesco",
-            "beginArea": null
-         },
-         "project": {
-            "codeProject": 11345,
-            "nameProject": "Prod_Bradesco_BR "
-         },
-         "cityBase": {
-            "codeCityBase": 5,
-            "nameCityBase": "São Paulo",
-            "acronymCityBase": "BRA",
-            "locationCityBase": "1º andar, próximo do laboratório  "
-         },
-         "company": {
-            "codeCompany": 1,
-            "nameCompany": "CIT Software S.A."
-         },
-         "timeLine": [
+{
+    "people":[{
+                    "id": 0,
+                    "name": "Caio Henrique",
+                    "login": "caiohenrique",
+                    "nickName": "Caio",
+                    "email": "caiohenrique@ciandt.com",
+                    "contact": "13 991761171",
+                    "admission": 1258941600000,
+                    "admissionReal": 1212375600000,
+                    "status": true,
+                    "chat": "117962141803858037132",
+                    "role": {
+                        "codeRole": 555,
+                        "nameRole": "Developer"
+                    },
+                    "area": {
+                        "codeArea": 323,
+                        "nameArea": "Bradesco",
+                        "beginArea": null
+                    },
+                    "project": {
+                        "codeProject": 11345,
+                        "nameProject": "Prod_Bradesco_BR "
+                    },
+                    "cityBase": {
+                        "codeCityBase": 5,
+                        "nameCityBase": "São Paulo",
+                        "acronymCityBase": "BRA",
+                        "locationCityBase": "1º andar, próximo do laboratório  "
+                    },
+                    "company": {
+                        "codeCompany": 1,
+                        "nameCompany": "CIT Software S.A."
+                    },
+                    "timeLine": [
+                        {
+                        "areaTimeLine": "Vela",
+                        "projectTimeLinet": "Flip",
+                        "teamTimeLine": "Aquarius",
+                        "beginDateTimeLine": 1325383200076,
+                        "beginAnoTimeLine": 1999,
+                        "beginMesTimeLine":"Junho"
+                        },
+                        {
+                        "areaTimeLine": "Itau",
+                        "projectTimeLinet": "Moon",
+                        "teamTimeLine": "HouseTime",
+                        "beginDateTimeLine": 1325383200098,
+                        "beginAnoTimeLine": 2000,
+                        "beginMesTimeLine":"Dezembro"
+                        },
+                        {
+                        "areaTimeLine": "Bradesco",
+                        "projectTimeLinet": "Alta Renda",
+                        "teamTimeLine": "Red",
+                        "beginDateTimeLine": 1325383200065,
+                        "beginAnoTimeLine": 2002,
+                        "beginMesTimeLine":"Feveiro"
+                        }
+                    ],
+                    "GU": "GU Red",
+                    "team": [
+                        {
+                        "loginTeam": "annac",
+                        "firstNameTeam": "Anna Caroline Ferreira Inacio",
+                        "nickNameTeam": "Anna",
+                        "pictureTeam": ""
+                        },
+                        {
+                            "loginTeam": "tiagoms",
+                            "firstNameTeam": "Tiago Mendes Silva",
+                            "nickNameTeam": "",
+                            "pictureTeam": ""
+                        },
+                        {
+                            "loginTeam": "gabrielacosta",
+                            "firstNameTeam": "Gabriela Bonifacio da Costa Oliveira",
+                            "nickNameTeam": "Gabi",
+                            "pictureTeam": ""
+                        }
+                    ],
+                    "coach": "Aretha P",
+                    "pdm": "Aretha Perboli",
+                    "bp": "Rita Caroline de Arruda",
+                    "biograph": "Um profissional que está sempre em busca constante de conhecimento, experiência e oportunidades para evoluir tanto pessoalmente como em minha carreira.",
+                    "biographAvaliable": true,
+                    "clientName": "Bradesco",
+                    "picture": "",
+                    "awardsCategories": [
+                        {
+                        "nameAwardsCategories": "Team Highlight",
+                        "iconAwardsCategories": "",
+                        "awards": [
+                            {
+                                "dateAwardsCategories": "01-11-2020",
+                                "loginDelivAwardsCategories": null,
+                                "commentAwardsCategories": null
+                            }
+                        ]
+                        },
+                        {
+                            "nameAwardsCategories": "Team Highlight",
+                            "iconAwardsCategories": "",
+                            "awards": [
+                            {
+                                "dateAwardsCategories": "06-11-2020",
+                                "loginDelivAwardsCategories": null,
+                                "commentAwardsCategories": null
+                            }
+                            ]
+                        },
+                        {
+                            "nameAwardsCategories": "Team Highlight",
+                            "iconAwardsCategories": "",
+                            "awards": [
+                            {
+                                "dateAwardsCategories": "09-11-2020",
+                                "loginDelivAwardsCategories": null,
+                                "commentAwardsCategories": null
+                            }
+                            ]
+                        },
+                        {
+                        "nameAwardsCategories": "Individual Highlight",
+                        "iconAwardsCategories": "",
+                        "awards": [
+                            {
+                                "dateAwardsCategories": "10-11-2020",
+                                "loginDelivAwardsCategories": null,
+                                "commentAwardsCategories": null
+                            }
+                        ]
+                        },
+                        {
+                            "nameAwardsCategories": "Personalizados",
+                            "iconAwardsCategories": "",
+                            "awards": [
+                            {
+                                "dateAwardsCategories": "10-11-2020",
+                                "loginDelivAwardsCategories": null,
+                                "commentAwardsCategories": null
+                            }
+                            ]
+                        }
+            ]  
+        },
             {
-               "areaTimeLine": "Vela",
-               "projectTimeLinet": "Flip",
-               "teamTimeLine": "Aquarius",
-               "beginDateTimeLine": 1325383200076
+            "id": 1,
+            "name": "Tiago Mendes Silva",
+            "login": "tiagoms",
+            "nickName": "Tiago",
+            "email": "tiagoms@ciandt.com",
+            "contact": "11 943042181",
+            "admission": 1258941600000,
+            "admissionReal": 1212375600000,
+            "status": false,
+            "chat": "107681467562805542249",
+            "role": {
+                "codeRole": 555,
+                "nameRole": "Developer"
             },
-            {
-               "areaTimeLine": "Itau",
-               "projectTimeLinet": "Moon",
-               "teamTimeLine": "HouseTime",
-               "beginDateTimeLine": 1325383200098
+            "area": {
+                "codeArea": 323,
+                "nameArea": "Bradesco",
+                "beginArea": null
             },
-            {
-               "areaTimeLine": "Bradesco",
-               "projectTimeLinet": "Alta Renda",
-               "teamTimeLine": "Red",
-               "beginDateTimeLine": 1325383200065
-            }
-         ],
-         "team": [
-            {
-               "loginTeam": "GU Red",
-               "firstNameTeam": "RED",
-               "nickNameTeam": "RED",
-               "pictureTeam": ""
-            }
-         ],
-         "coach": "Aretha Perboli",
-         "pdm": "Aretha Perboli",
-         "bp": "Rita Caroline de Arruda",
-         "biograph": "Um profissional que está sempre em busca constante de conhecimento, experiência e oportunidades para evoluir tanto pessoalmente como em minha carreira.",
-         "avaliable": true,
-         "clientName": "Bradesco",
-         "picture": "",
-         "awardsCategories": [
-            {
-               "nameAwardsCategories": "Team Highlight",
-               "iconAwardsCategories": "",
-               "awards": [
-                  {
-                     "dateAwardsCategories": "01-11-2020",
-                     "loginDelivAwardsCategories": null,
-                     "commentAwardsCategories": null
-                  }
-               ]
+            "project": {
+                "codeProject": 11345,
+                "nameProject": "Prod_Bradesco_BR "
             },
-            {
+            "cityBase": {
+                "codeCityBase": 5,
+                "nameCityBase": "São Paulo",
+                "acronymCityBase": "BRA",
+                "locationCityBase": "2º andar, próximo do laboratório  "
+            },
+            "company": {
+                "codeCompany": 1,
+                "nameCompany": "CIT Software S.A."
+            },
+            "timeLine": [
+                {
+                "areaTimeLine": "Vela",
+                "projectTimeLinet": "Flip",
+                "teamTimeLine": "Aquarius",
+                "beginAnoTimeLine": 1987,
+                "beginMesTimeLine":"Agosto"
+                },
+                {
+                "areaTimeLine": "Itau",
+                "projectTimeLinet": "Moon",
+                "teamTimeLine": "HouseTime",
+                "beginAnoTimeLine": 2015,
+                "beginMesTimeLine":"Agosto"
+                },
+                {
+                "areaTimeLine": "Bootcamp",
+                "projectTimeLinet": "Alta Renda",
+                "teamTimeLine": "Red",
+                "beginAnoTimeLine": 2020,
+                "beginMesTimeLine":"outubro"
+                }
+            ],
+            "GU": "GU Red",
+            "team": [
+                {
+                "loginTeam": "annac",
+                "firstNameTeam": "Anna Caroline Ferreira Inacio",
+                "nickNameTeam": "Anna",
+                "pictureTeam": ""
+                },
+                {
+                    "loginTeam": "tiagoms",
+                    "firstNameTeam": "Tiago Mendes Silva",
+                    "nickNameTeam": "",
+                    "pictureTeam": ""
+                },
+                {
+                    "loginTeam": "gabrielacosta",
+                    "firstNameTeam": "Gabriela Bonifacio da Costa Oliveira",
+                    "nickNameTeam": "Gabi",
+                    "pictureTeam": ""
+                }
+            ],
+            "coach": "Martin ",
+            "pdm": "Barack ",
+            "bp": "Mariele",
+            "biograph": "",
+            "biographAvaliable":false,
+            "clientName": "Bradesco",
+            "picture": "",
+            "awardsCategories": [
+                {
                 "nameAwardsCategories": "Team Highlight",
                 "iconAwardsCategories": "",
                 "awards": [
-                   {
-                      "dateAwardsCategories": "06-11-2020",
-                      "loginDelivAwardsCategories": null,
-                      "commentAwardsCategories": null
-                   }
+                    {
+                        "dateAwardsCategories": "01-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
                 ]
-             },
+                },
+                {
+                    "nameAwardsCategories": "Team Highlight",
+                    "iconAwardsCategories": "",
+                    "awards": [
+                    {
+                        "dateAwardsCategories": "06-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                    ]
+                },
+                {
+                    "nameAwardsCategories": "Team Highlight",
+                    "iconAwardsCategories": "",
+                    "awards": [
+                    {
+                        "dateAwardsCategories": "06-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                    ]
+                },
+                {
+                    "nameAwardsCategories": "Team Highlight",
+                    "iconAwardsCategories": "",
+                    "awards": [
+                    {
+                        "dateAwardsCategories": "09-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                    ]
+                },
+                {
+                "nameAwardsCategories": "Individual Highlight",
+                "iconAwardsCategories": "",
+                "awards": [
+                    {
+                        "dateAwardsCategories": "10-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                ]
+                },
+                {
+                    "nameAwardsCategories": "Personalizados",
+                    "iconAwardsCategories": "",
+                    "awards": [
+                    {
+                        "dateAwardsCategories": "10-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                    ]
+                }
+                ]  
+          
+        },
+        {
+            "id": 2,
+            "name": "ANNA CAROLINE",
+            "login": "annac",
+            "nickName": "Anna",
+            "email": "annac@ciandt.com",
+            "contact": "11 998763325",
+            "admission": 1258941600000,
+            "admissionReal": 1212375600000,
+            "status": true,
+            "chat": "112022226520844215451",
+            "role": {
+                "codeRole": 555,
+                "nameRole": "Developer"
+            },
+            "area": {
+                "codeArea": 323,
+                "nameArea": "Itau",
+                "beginArea": null
+            },
+            "project": {
+                "codeProject": 11345,
+                "nameProject": "Prod_Itau_BR "
+            },
+            "cityBase": {
+                "codeCityBase": 5,
+                "nameCityBase": "São Paulo",
+                "acronymCityBase": "BRA",
+                "locationCityBase": "1º andar, próximo da sala de reunião  "
+            },
+            "company": {
+                "codeCompany": 1,
+                "nameCompany": "CIT Software S.A."
+            },
+            "timeLine": [
+                {
+                "areaTimeLine": "Vela",
+                "projectTimeLinet": "Flip",
+                "teamTimeLine": "Aquarius",
+                "beginAnoTimeLine": 1987,
+                "beginMesTimeLine":"Agosto"
+                },
+                {
+                "areaTimeLine": "Red",
+                "projectTimeLinet": "Bradesco",
+                "teamTimeLine": "Fenix",
+                "beginAnoTimeLine": 2003,
+                "beginMesTimeLine":"Fevereiro"
+                },
+                {
+                "areaTimeLine": "Purple",
+                "projectTimeLinet": "O Boticario",
+                "teamTimeLine": "Super Choque",
+                "beginAnoTimeLine": 2020,
+                "beginMesTimeLine":"outubro"
+                }
+                 ],
+                    "GU": "GU Red",
+                    "team": [
+                    {
+                    "loginTeam": "annac",
+                    "firstNameTeam": "Anna Caroline Ferreira Inacio",
+                    "nickNameTeam": "Anna",
+                    "pictureTeam": ""
+                    },
+                    {
+                        "loginTeam": "tiagoms",
+                        "firstNameTeam": "Tiago Mendes Silva",
+                        "nickNameTeam": "",
+                        "pictureTeam": ""
+                    },
+                    {
+                        "loginTeam": "gabrielacosta",
+                        "firstNameTeam": "Gabriela Bonifacio da Costa Oliveira",
+                        "nickNameTeam": "Gabi",
+                        "pictureTeam": ""
+                    }
+                    ],
+                    "coach": "Lucas ",
+                    "pdm": "Luana",
+                    "bp": "Jessica",
+                    "biograph": "",
+                    "biographAvaliable":false,
+                    "clientName": "Bradesco",
+                    "picture": "",
+                    "awardsCategories": [
+                        {
+                        "nameAwardsCategories": "Team Highlight",
+                        "iconAwardsCategories": "",
+                        "awards": [
+                            {
+                                "dateAwardsCategories": "01-11-2020",
+                                "loginDelivAwardsCategories": null,
+                                "commentAwardsCategories": null
+                            }
+                        ]
+                        },
+                        {
+                            "nameAwardsCategories": "Team Highlight",
+                            "iconAwardsCategories": "",
+                            "awards": [
+                            {
+                                "dateAwardsCategories": "06-11-2020",
+                                "loginDelivAwardsCategories": null,
+                                "commentAwardsCategories": null
+                            }
+                            ]
+                        },
+                        {
+                            "nameAwardsCategories": "Team Highlight",
+                            "iconAwardsCategories": "",
+                            "awards": [
+                            {
+                                "dateAwardsCategories": "06-11-2020",
+                                "loginDelivAwardsCategories": null,
+                                "commentAwardsCategories": null
+                            }
+                            ]
+                        },
+                        {
+                            "nameAwardsCategories": "Team Highlight",
+                            "iconAwardsCategories": "",
+                            "awards": [
+                            {
+                                "dateAwardsCategories": "09-11-2020",
+                                "loginDelivAwardsCategories": null,
+                                "commentAwardsCategories": null
+                            }
+                            ]
+                        },
+                        {
+                        "nameAwardsCategories": "Individual Highlight",
+                        "iconAwardsCategories": "",
+                        "awards": [
+                            {
+                                "dateAwardsCategories": "10-11-2020",
+                                "loginDelivAwardsCategories": null,
+                                "commentAwardsCategories": null
+                            }
+                        ]
+                        },
+                    {
+                        "nameAwardsCategories": "Personalizados",
+                        "iconAwardsCategories": "",
+                             "awards": [
+                            {
+                              "dateAwardsCategories": "10-11-2020",
+                              "loginDelivAwardsCategories": null,
+                              "commentAwardsCategories": null
+                            }
+                            ]
+                    },
+                {
+                    "nameAwardsCategories": "Personalizados",
+                    "iconAwardsCategories": "",
+                    "awards": [
+                    {
+                        "dateAwardsCategories": "10-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                    ]
+                }
+            ]  
+        },
+        {
+            "id": 2,
+            "name": "Gabriela Bonifácio",
+            "login": "gabrielacosta",
+            "nickName": "Bonifácio",
+            "email": "gabrielacosta@ciandt.com",
+            "contact": "11 9987337732",
+            "admission": 1258941600000,
+            "admissionReal": 1212375600000,
+            "status": true,
+            "chat": "102773712819228860036",
+            "role": {
+                "codeRole": 555,
+                "nameRole": "Tester"
+            },
+            "area": {
+            "code": 498,
+            "name": "Kemet",
+            "begin": null
+            },
+                "project": {
+                "codeProject": 22377,
+                "nameProject": "Kemet"
+                },
+
+            "cityBase": {
+            "codeCityBase": 13,
+            "nameCityBase": "Cairo",
+            "acronymCityBase": "EGT",
+            "locationCityBase": "1º Andar proximo a entrada"
+            },
+
+                "company": {
+                "codeCompany": 1,
+                "nameCompany": "CIT Software S.A."
+            },
+            "timeLine": [
+                {
+                "areaTimeLine": "Kemet",
+                "projectTimeLinet": "Hurgada",
+                "teamTimeLine": "Pirâmide",
+                "beginAnoTimeLine": 1997,
+                "beginMesTimeLine":"Junho"
+                },
+                {
+                "areaTimeLine": "Kemet",
+                "projectTimeLinet": "Alexandria",
+                "teamTimeLine": "Pirâmide",
+                "beginAnoTimeLine": 2003,
+                "beginMesTimeLine":"Fevereiro"
+                },
+                {
+                    "areaTimeLine": "Faraó",
+                    "projectTimeLinet": "Alexandria",
+                    "teamTimeLine": "Pirâmide",
+                    "beginAnoTimeLine": 2003,
+                    "beginMesTimeLine":"Fevereiro"
+                    }
+            ],
+            "GU": "GU Red",
+            "team": [
+                {
+                "loginTeam": "annac",
+                "firstNameTeam": "Anna Caroline Ferreira Inacio",
+                "nickNameTeam": "Anna",
+                "pictureTeam": ""
+                },
+                {
+                    "loginTeam": "tiagoms",
+                    "firstNameTeam": "Tiago Mendes Silva",
+                    "nickNameTeam": "",
+                    "pictureTeam": ""
+                },
+                {
+                    "loginTeam": "gabrielacosta",
+                    "firstNameTeam": "Gabriela Bonifacio da Costa Oliveira",
+                    "nickNameTeam": "Gabi",
+                    "pictureTeam": ""
+                }
+            ],
+            "coach": "Eurídice ",
+            "pdm": "Cleopatra",
+            "bp": "Aotepe I",
+            "biograph": "",
+            "biographAvaliable":false,
+            "clientName": "Bradesco",
+            "picture": "",
+            "awardsCategories": [
+                {
+                "nameAwardsCategories": "Team Highlight",
+                "iconAwardsCategories": "",
+                "awards": [
+                    {
+                        "dateAwardsCategories": "01-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                ]
+                },
+                     {
+                    "nameAwardsCategories": "Team Highlight",
+                    "iconAwardsCategories": "",
+                    "awards": [
+                    {
+                        "dateAwardsCategories": "06-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                    ]
+                },
+                {
+                    "nameAwardsCategories": "Team Highlight",
+                    "iconAwardsCategories": "",
+                    "awards": [
+                    {
+                        "dateAwardsCategories": "09-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                    ]
+                },
+                {
+                "nameAwardsCategories": "Individual Highlight",
+                "iconAwardsCategories": "",
+                "awards": [
+                    {
+                        "dateAwardsCategories": "10-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                ]
+                },
+                {
+                    "nameAwardsCategories": "Individual Highlight",
+                    "iconAwardsCategories": "",
+                    "awards": [
+                        {
+                            "dateAwardsCategories": "10-11-2020",
+                            "loginDelivAwardsCategories": null,
+                            "commentAwardsCategories": null
+                        }
+                    ]
+                    },
             {
-               "nameAwardsCategories": "Individual Highlight",
-               "iconAwardsCategories": "",
-               "awards": [
-                  {
-                     "dateAwardsCategories": "10-11-2020",
-                     "loginDelivAwardsCategories": null,
-                     "commentAwardsCategories": null
-                  }
-               ]
+                "nameAwardsCategories": "Personalizados",
+                "iconAwardsCategories": "",
+                "awards": [
+                    {
+                        "dateAwardsCategories": "10-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                ]
+            },
+                {
+                    "nameAwardsCategories": "Personalizados",
+                    "iconAwardsCategories": "",
+                    "awards": [
+                    {
+                        "dateAwardsCategories": "10-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                    ]
+                }
+            ]  
+        },
+        {
+            "id": 3,
+            "name": "CESAR SILVA",
+            "login": "cesars",
+            "nickName": "Cesar",
+            "email": "cesars@ciandt.com",
+            "contact": "11 996432242",
+            "admission": 1258941600000,
+            "admissionReal": 1212375600000,
+            "status": true,
+            "chat": "102773712819228860036",
+            "role": {
+        "code": 33,
+        "name": "Developer"
+    },
+            "area": {
+        "code": 565,
+        "name": "Vela",
+        "begin": null
+    },
+            "project": {
+        "codeProject": 11234,
+        "nameProject": "Prod_Vela"
+    },    "cityBase": {
+        "codeCityBase": 2,
+        "nameCityBase": "Campinas",
+        "acronymCityBase": "CAM",
+        "locationCityBase": "3º Andar prox. da sala Scooby-Doo"
+    },
+
+            "company": {
+                "codeCompany": 1,
+                "nameCompany": "CIT Software S.A."
+            },
+            "timeLine": [
+            {
+            "areaTimeLine": "Red",
+            "projectTimeLinet": "Bradesco",
+            "teamTimeLine": "Fenix", 
+            "beginDateTimeLine": 1293847200033,
+            "beginAnoTimeLine": 1999,
+            "beginMesTimeLine":"Agosto"
             },
             {
-               "nameAwardsCategories": "You Rock",
-               "iconAwardsCategories": "",
-               "awards": [
-                  {
-                     "dateAwardsCategories": "15-11-2020",
-                     "loginDelivAwardsCategories": null,
-                     "commentAwardsCategories": null
-                  }
-               ]
-            }
-         ]
-      },
+            "areaTimeLine": "Purple",
+            "projectTimeLinet": "O Boticario",
+            "teamTimeLine": "Super Choque",
+            "beginDateTimeLine": 1325383200033,
+            "beginAnoTimeLine": 2005,
+            "beginMesTimeLine":"Setembro"
+        },
+        {
+            "areaTimeLine": "Vela",
+            "projectTimeLinet": "AB-INBEV",
+            "teamTimeLine": "Velis", 
+            "beginDateTimeLine": 1293947200033,
+            "beginAnoTimeLine": 2020,
+            "beginMesTimeLine":"Dezembro"
+        }
+            ],
+            "GU": "GU Vela",
+            "teamTimeLine": [
+                {
+                "loginTeam": "annac",
+                "firstNameTeam": "Anna Caroline Ferreira Inacio",
+                "nickNameTeam": "Anna",
+                "pictureTeam": ""
+                },
+                {
+                    "loginTeam": "tiagoms",
+                    "firstNameTeam": "Tiago Mendes Silva",
+                    "nickNameTeam": "",
+                    "pictureTeam": ""
+                },
+                {
+                    "loginTeam": "caiohenrique",
+                    "firstNameTeam": "Caio Henrique",
+                    "nickNameTeam": "Caio",
+                    "pictureTeam": ""
+                }
+            ],
+            "coach": "Luana ",
+            "pdm": "Juliano",
+            "bp": "Oswaldo",
+            "biograph": "Focado no aprendizado e especialização profissional.",
+            "biographAvaliable":true,
+            "clientName": "Ambev",
+            "picture": "",
+            "awardsCategories": [
+                {
+                "nameAwardsCategories": "Team Highlight",
+                "iconAwardsCategories": "",
+                "awards": [
+                    {
+                        "dateAwardsCategories": "01-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                ]
+                },
+  {
+                "nameAwardsCategories": "Individual Highlight",
+                "iconAwardsCategories": "",
+                "awards": [
+                    {
+                        "dateAwardsCategories": "01-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                ]
+                },
+                     {
+                    "nameAwardsCategories": "Team Highlight",
+                    "iconAwardsCategories": "",
+                    "awards": [
+                    {
+                        "dateAwardsCategories": "06-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                    ]
+                },
+                {
+                    "nameAwardsCategories": "Team Highlight",
+                    "iconAwardsCategories": "",
+                    "awards": [
+                    {
+                        "dateAwardsCategories": "09-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                    ]
+                },
+                {
+                "nameAwardsCategories": "Individual Highlight",
+                "iconAwardsCategories": "",
+                "awards": [
+                    {
+                        "dateAwardsCategories": "10-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                ]
+                },
+           {
+                "nameAwardsCategories": "Individual Highlight",
+                "iconAwardsCategories": "",
+                "awards": [
+                    {
+                        "dateAwardsCategories": "10-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                ]
+                },
+           {
+                "nameAwardsCategories": "Personalizados",
+                "iconAwardsCategories": "",
+                "awards": [
+                    {
+                        "dateAwardsCategories": "10-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                ]
+                },
  {
-   "login": "tiagoms",
-   "name": "Tiago Mendes Silva",
-   "nickname": "Tiago", 
-   "email": "tiagoms@ciandt.com",
-   "admission": 1258941600000,
-   "admissionReal": 1212375600000,
-   "role": {
-       "code": 61,
-       "name": "Developer"
-   },
-   "area": {
-       "code": 502,
-       "name": "Red",
-       "begin": null
-   },
-   "project": {
-       "code": 11266,
-       "name": "BootCamp Identidade Negra"
-   },
-   "cityBase": {
-       "code": 1,
-       "name": "São Paulo",
-       "acronym": "SP",
-       "location": "1º Andar proximo a entrada"
-   },
-
-   "company": {
-       "code": 1,
-       "name": "CIT Software S.A."
-   },
-   "timeLine":[
-       {
-           "area": "BootCamp Identidade Negra",
-           "project": "CI&Ters",
-           "team": "SuperChoque",
-           "beginDate": 1325383200000
-       },
-       {
-           "area": "Red",
-           "project": "Bradesco",
-           "team": "Open Banking", 
-           "beginDate": 1293847200000
-       }
-   ],
-   "team":[
-       {
-           "login": "tiagoms",
-           "name": "Tiago Mendes Silva",
-           "nickname": "Tiago",
-           "picture": "https://citweb.cit.com.br/ipeople/photo?ipeople-photo-token=a33d98c6ed170926bfcfa91aec930574&cdLogin=tiagoms"
-       },
-       {
-           "login": "tiagoms",
-           "name": "Tiago mendes Silva",
-           "nickname": "Tiago",
-           "picture": "https://citweb.cit.com.br/ipeople/photo?ipeople-photo-token=a33d98c6ed170926bfcfa91aec930574&cdLogin=tiagoms"
-       }
-   ],
-   "coach": {
-       "login": "mpedroso",
-       "name": "Tiago Mendes Silva",
-       "nickname": "Tiago"
-   },
-   "pdm": {
-       "login": "rodolfogk",
-       "name": "Tiago Mendes Silva",
-       "nickname": "Tiago"
-   },
-   "bp": {
-       "login": "abvalle",
-       "name": "Tiago Mendes Silva",
-       "nickname": "Tiago"
-   },
-   "biograph": "",
-   "avaliable": true,
-   "clientName": "CI&T People",
-   "picture": "https://citweb.cit.com.br/ipeople/photo?ipeople-photo-token=a33d98c6ed170926bfcfa91aec930574&cdLogin=tiagoms",
-   "awardsCategories": [
-       {
-           "name": "Team Highlight",
-           "icon": "https://citweb.cit.com.br/ipeople/award_icon?id=4",
-           "awards" :[
-               {
-                   "date": 1325383200000,
-                   "year": "2012",
-                   "loginDeliv": null,
-                   "comment": null
-               }
-           ]
-       }
-   ] 
-},
-{
-   "login": "cesars",
-   "name": "CESAR SILVA",
-   "nickname": "Cesar", 
-   "email": "cesars@ciandt.com",
-   "admission": 1258941600003,
-   "admissionReal": 1212375600003,
-   "role": {
-       "code": 33,
-       "name": "Developer"
-   },
-   "area": {
-       "code": 565,
-       "name": "Vela",
-       "begin": null
-   },
-   "project": {
-       "code": 11234,
-       "name": "Prod_Vela"
-   },
-   "cityBase": {
-       "code": 2,
-       "name": "Campinas",
-       "acronym": "CAM",
-       "location": "3º Andar prox. da sala Scooby-Doo"
-   },
-
-   "company": {
-       "code": 1,
-       "name": "CIT Software S.A."
-   },
-   "timeLine":[
-       {
-           "area": "Red",
-           "project": "Bradesco",
-           "team": "Fenix", 
-           "beginDate": 1293847200033
-       },
-        {
-           "area": "Purple",
-           "project": "O Boticario",
-           "team": "Super Choque",
-           "beginDate": 1325383200033
-       },
-       {
-           "area": "Vela",
-           "project": "AB-INBEV",
-           "team": "Velis", 
-           "beginDate": 1293947200033
-       }
+                "nameAwardsCategories": "Personalizados",
+                "iconAwardsCategories": "",
+                "awards": [
+                    {
+                        "dateAwardsCategories": "10-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                ]
+                },
+                {
+                    "nameAwardsCategories": "Personalizados",
+                    "iconAwardsCategories": "",
+                    "awards": [
+                    {
+                        "dateAwardsCategories": "10-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                    ]
+                }
+                ]  
         
-   ],
-   "team":[
-       {
-           "login": "cesars",
-           "name": "CESAR SILVA",
-           "nickname": "Cesar",
-           "picture": "https://citweb.cit.com.br/ipeople/photo?ipeople-photo-token=a33d98c6ed170926bfcfa91aec930574&cdLogin=annac"
-       },
-       {
-           "login": "cesars",
-           "name": "CESAR SILVA",
-           "nickname": "Cesar",
-           "picture": "https://citweb.cit.com.br/ipeople/photo?ipeople-photo-token=a33d98c6ed170926bfcfa91aec930574&cdLogin=annac"
-       },
+        },
         {
-           "login": "cesars",
-           "name": "CESAR SILVA",
-           "nickname": "Cesar",
-           "picture": "https://citweb.cit.com.br/ipeople/photo?ipeople-photo-token=a33d98c6ed170926bfcfa91aec930574&cdLogin=annac"
-       }
-   ],
-   "coach": {
-       "login": "fjorge",
-       "name": "CESAR SILVA",
-       "nickname": "Cesar"
-   },
-   "pdm": {
-       "login": "fjorge",
-       "name": "CESAR SILVA",
-       "nickname": "Cesar"
-   },
-   "bp": {
-       "login": "vnovais",
-       "name": "CESAR SILVA",
-       "nickname": "Cesar"
-   },
-   "biograph": "Meu nome é César, tenho 28 anos, estou cursando Análise e Desenvolvimento de Sistemas pela FATEC-SP. Sou apaixonado por esporte, sempre que posso estou acompanhando os campeonatos, seja de futebol ou basquete, também sou apaixonado por tecnologia e tento sempre me manter ligado nas novidades.",
-   "avaliable": true,
-   "clientName": "O Boticario",
-   "picture": "https://citweb.cit.com.br/ipeople/photo?ipeople-photo-token=a33d98c6ed170926bfcfa91aec930574&cdLogin=annac",
-   "awardsCategories": [
-       {
-           "name": "Team Highlight",
-           "icon": "https://citweb.cit.com.br/ipeople/award_icon?id=4",
-           "awards" :[
-               {
-                   "date": 1325383200000,
-                   "year": "2012",
-                   "loginDeliv": null,
-                   "comment": null
-               }
-           ]
-       }
-   ] 
-},
-{
-   "login": "gabrielacosta",
-   "name": "Gabriela Bonifácio",
-   "nickname": "Bonifácio", 
-   "email": "gabrielacosta@ciandt.com",
-   "admission": 2369941600000,
-   "admissionReal": 2121375600000,
-   "role": {
-       "code": 50,
-       "name": "Tester"
-   },
-   "area": {
-       "code": 498,
-       "name": "Kemet",
-       "begin": null
-   },
-   "project": {
-       "code": 22377,
-       "name": "Kemet"
-   },
-   "cityBase": {
-       "code": 13,
-       "name": "Cairo",
-       "acronym": "EGT",
-       "location": "1º Andar proximo a entrada"
-   },
+            "id": 4,
+            "name": "Marcos Pereira da Silva",
+            "login": "marcosps",
+            "nickName": "Marcos",
+            "email": "marcospereira@ciandt.com",
+            "contact": "11 997625521",
+            "admission": 1258941600000,
+            "admissionReal": 1212375600000,
+            "status": false,
+            "chat": "102773712819228860036",
+            "role": {
+        "code": 61,
+        "name": "Developer"
+    },
+            "area":{
+        "code": 502,
+        "name": "Vela",
+        "begin": null
+    },
+            "project":{
+        "codeProject": 11266,
+        "nameProject": "BootCamp Identidade Negra"
+    }, 
+"cityBase": {
+        "codeCityBase": 1,
+        "nameCityBase": "São Paulo",
+        "acronymCityBase": "SP",
+        "locationCityBase": "2º Andar proximo a recepcao"
+    },
 
-   "company": {
-       "code": 1,
-       "name": "CIT Software S.A."
-   },
-   "timeLine":[
-       {
-           "area": "Kemet",
-           "project": "Hurgada",
-           "team": "Pirâmide",
-           "beginDate": 1214273200000
-       },
-       {
-           "area": "Kemet",
-           "project": "Alexandria",
-           "team": "Pirâmide", 
-           "beginDate": 1293847200000
-       },
-         {
-           "area": "Kemet",
-           "project": "Nilo",
-           "team": "Pirâmide", 
-           "beginDate": 2293848200000
-       }
-
-   ],
-   "team":[
-       {
-           "login": "nefertiti",
-           "name": "Nefertiti",
-           "nickname": "Titi",
-           "picture": "https://citweb.cit.com.br/ipeople/photo?ipeople-photo-token=a33d98c6ed170926bfcfa91aec930574&cdLogin=dcereda"
-       },
-       {
-           "login": "meritaton",
-           "name": "Meritaton",
-           "nickname": "Cereda",
-           "picture": "https://citweb.cit.com.br/ipeople/photo?ipeople-photo-token=a33d98c6ed170926bfcfa91aec930574&cdLogin=dcereda"
-       }
-   ],
-   "coach": {
-       "login": "euridice",
-       "name": "Eurídice",
-       "nickname": "Euri"
-   },
-   "pdm": {
-       "login": "cleopatra",
-       "name": "Cleopatra",
-       "nickname": "Cleo"
-   },
-   "bp": {
-       "login": "aotepe",
-       "name": "Aotepe I",
-       "nickname": "Tepin"
-   },
-   "biograph": "Dentre os reis e rainhas Egípcios, vim dar o ar da graça na CI&T.",
-   "avaliable": true,
-   "clientName": "Aswan",
-   "picture": "https://citweb.cit.com.br/ipeople/photo?ipeople-photo-token=a33d98c6ed170926bfcfa91aec930574&cdLogin=dcereda",
-   "awardsCategories": [
-       {
-           "name": "Area Star",
-           "icon": "https://citweb.cit.com.br/ipeople/award_icon?id=4",
-           "awards" :[
-               {
-                   "date": 1465372100000,
-                   "year": "2018",
-                   "loginDeliv": null,
-                   "comment": null
-               }
-           ]
-       }
-   ] 
-},
-{
-   "login": "marcosps",
-   "name": "Marcos Pereira da Silva",
-   "nickname": "Marcos", 
-   "email": "marcospereira@ciandt.com",
-   "admission": 1258941600000,
-   "admissionReal": 1212375600113,
-   "role": {
-       "code": 61,
-       "name": "Developer"
-   },
-   "area": {
-       "code": 502,
-       "name": "Vela",
-       "begin": null
-   },
-   "project": {
-       "code": 11266,
-       "name": "BootCamp Identidade Negra"
-   },
-   "cityBase": {
-       "code": 1,
-       "name": "São Paulo",
-       "acronym": "SP",
-       "location": "2º Andar proximo a recepcao"
-   },
-
-   "company": {
-       "code": 1,
-       "name": "CIT Software S.A."
-   },
-   "timeLine":[
-       {
-           "area": "BootCamp Identidade Negra",
-           "project": "CI&Ters",
-           "team": "SuperChoque",
-           "beginDate": 1325383200113
-       },
-       {
-           "area": "Vela",
-           "project": "AB InBev",
-           "team": "BudWeisser", 
-           "beginDate": 1293847200113
-       }
-   ],
-   "team":[
-       {
-           "login": "marcosps",
-           "name": "Marcos Pereira da Silva",
-           "nickname": "Marcos",
-           "picture": "https://citweb.cit.com.br/ipeople/photo?ipeople-photo-token=a33d98c6ed170926bfcfa91aec930574&cdLogin=marcosps"
-       },
-       {
-           "login": "marcosps",
-           "name": "Marcos Pereira da Silva",
-           "nickname": "Marcos",
-           "picture": "https://citweb.cit.com.br/ipeople/photo?ipeople-photo-token=a33d98c6ed170926bfcfa91aec930574&cdLogin=marcosps"
-       }
-   ],
-   "coach": {
-       "login": "vnovais",
-       "name": "Marcos Pereira da Silva",
-       "nickname": "Marcos"
-   },
-   "pdm": {
-       "login": "marciare",
-       "name": "Marcos Pereira da Silva",
-       "nickname": "Marcos"
-   },
-   "bp": {
-       "login": "vnovais",
-       "name": "Marcos Pereira da Silva",
-       "nickname": "Marcos"
-   },
-   "biograph": "Ola sou o Marcos, tenho 39 anos (não parece. kkkk), faço graduação em analise de sistemas, tenho certificação pela CertProf nos conhecimentos de Scrum Fundation e DevOps. Gosto de assistir filmes, séries, curtir a natureza, amo os animais, tá ligado sou o bicho!!!",
-   "avaliable": true,
-   "clientName": "CI&T People",
-   "picture": "https://citweb.cit.com.br/ipeople/photo?ipeople-photo-token=a33d98c6ed170926bfcfa91aec930574&cdLogin=marcosps",
-   "awardsCategories": [
-       {
-           "name": "Team Highlight",
-           "icon": "https://citweb.cit.com.br/ipeople/award_icon?id=4",
-           "awards" :[
-               {
-                   "date": 1325383200113,
-                   "year": "2012",
-                   "loginDeliv": null,
-                   "comment": null
-               }
-           ]
-       }
-   ] 
-},
-{
-   "login": "marlonhs",
-   "name": "Marlon Henrique Olimpio dos Santos",
-   "nickname": "Marlon", 
-   "email": "marlonhs@ciandt.com",
-   "admission": 1258941600000,
-   "admissionReal": 1212375600000,
-   "role": {
-       "code": 61,
-       "name": "Developer"
-   },
-   "area": {
-       "code": 502,
-       "name": "Purple",
-       "begin": null
-   },
-   "project": {
-       "code": 11266,
-       "name": "Prod_Purple_BR"
-   },
-   "cityBase": {
-       "code": 1,
-       "name": "São Paulo",
-       "acronym": "SP",
-       "location": "We work"
-   },
-
-   "company": {
-       "code": 1,
-       "name": "CIT Software S.A."
-   },
-   "timeLine":[
-       {
-           "area": "Purple",
-           "project": "Ontap",
-           "team": "Boticário",
-           "beginDate": 1325383200000
-       },
-       {
-           "area": "Purple",
-           "project": "BEES",
-           "team": "Original", 
-           "beginDate": 1293847200000
-       }
-   ],
-   "team":[
-       {
-           "login": "marlonhs",
-           "name": "Marlon Henrique Olimpio dos Santos",
-           "nickname": "Marlon",
-           "picture": ""
-       },
-       {
-           "login": "marlonhs",
-           "name": "Marlon Henrique Olimpio dos Santos",
-           "nickname": "Marlon",
-           "picture": ""
-       }
-   ],
-   "coach": {
-       "login": "olavob",
-       "name": "Olavo Baptistella",
-       "nickname": "Marlon"
-   },
-   "pdm": {
-       "login": "hbiondo",
-       "name": "Heloisa Biondo",
-       "nickname": "Marlon"
-   },
-   "bp": {
-       "login": "abvalle",
-       "name": "DANILO CEREDA",
-       "nickname": "Cereda"
-   },
-   "biograph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rhoncus lectus tellus. Suspendisse in nulla quis nisi pretium elementum. Praesent a ante convallis, scelerisque libero nec, pulvinar est. Pellentesque in nulla sit amet arcu efficitur faucibus. Proin et nisl quis urna sollicitudin consequat. Etiam sed interdum lectus, quis venenatis erat. Maecenas laoreet eros eu ullamcorper tincidunt. Nulla sed quam eu nisl maximus feugiat in vitae mauris. Phasellus sed leo nisl. Suspendisse varius ex nec libero convallis euismod. Aliquam eget cursus diam. Etiam vitae eros vitae ligula vulputate finibus. Maecenas ac nunc cursus, blandit risus vel, vestibulum leo. Nullam sit amet ultricies sem, a ultricies massa.",
-   "avaliable": true,
-   "clientName": "AB-INBEV",
-   "picture": "https://citweb.cit.com.br/ipeople/photo?ipeople-photo-token=a33d98c6ed170926bfcfa91aec930574&cdLogin=dcereda",
-   "awardsCategories": [
-       {
-           "name": "Team Highlight",
-           "icon": "https://citweb.cit.com.br/ipeople/award_icon?id=4",
-           "awards" :[
-               {
-                   "date": 1325383200000,
-                   "year": "2012",
-                   "loginDeliv": null,
-                   "comment": null
-               }
-           ]
-       }
-   ] 
-},
-{
-   "login": "annac",
-   "name": "ANNA CAROLINE",
-   "nickname": "Anna", 
-   "email": "annac@ciandt.com",
-   "admission": 1258941600003,
-   "admissionReal": 1212375600003,
-   "role": {
-       "code": 33,
-       "name": "Developer"
-   },
-   "area": {
-       "code": 503,
-       "name": "Purple",
-       "begin": null
-   },
-   "project": {
-       "code": 11233,
-       "name": "Prod_Purple_BR"
-   },
-   "cityBase": {
-       "code": 1,
-       "name": "São Paulo",
-       "acronym": "SP",
-       "location": "4º Andar proximo da sala de reunião 3"
-   },
-
-   "company": {
-       "code": 1,
-       "name": "CIT Software S.A."
-   },
-   "timeLine":[
-       {
-           "area": "Vela",
-           "project": "AB-INBEV",
-           "team": "Velis", 
-           "beginDate": 1293947200033
-       },
-       {
-           "area": "Red",
-           "project": "Bradesco",
-           "team": "Fenix", 
-           "beginDate": 1293847200033
-       },
+            "company": {
+                "codeCompany": 1,
+                "nameCompany": "CIT Software S.A."
+            },
+            "timeLine": [
+                {
+            "areaTimeLine": "BootCamp ",
+            "projectTimeLinet": "CI&Ters",
+            "teamTimeLine": "SuperChoque", 
+            "beginDateTimeLine": 1293847200033,
+            "beginAnoTimeLine": 2010,
+            "beginMesTimeLine":"Fevereiro"
+        },
+            {
+            "areaTimeLine": "Vela",
+            "projectTimeLinet": "AB InBev",
+            "teamTimeLine": "BudWeisser",
+            "beginDate": 1325383200033,
+            "beginAnoTimeLine": 2013,
+            "beginMesTimeLine":"Fevereiro"
+        },
         {
-           "area": "Purple",
-           "project": "O Boticario",
-           "team": "Super Choque",
-           "beginDate": 1325383200033
-       }
-        
-   ],
-   "team":[
-       {
-           "login": "annac",
-           "name": "ANNA CAROLINE",
-           "nickname": "Anna",
-           "picture": "https://citweb.cit.com.br/ipeople/photo?ipeople-photo-token=a33d98c6ed170926bfcfa91aec930574&cdLogin=annac"
-       },
-       {
-           "login": "annac",
-           "name": "ANNA CAROLINE",
-           "nickname": "annac",
-           "picture": "https://citweb.cit.com.br/ipeople/photo?ipeople-photo-token=a33d98c6ed170926bfcfa91aec930574&cdLogin=annac"
-       },
+            "areaTimeLine": "Vela",
+            "projectTimeLinet": "AB InBev",
+            "teamTimeLine": "Velis", 
+            "beginDate": 1293947200033,
+            "beginAnoTimeLine": 2019,
+            "beginMesTimeLine":"Fevereiro"
+        }
+            ],
+            "GU": "GU Vela",
+            "team": [
+                {
+                "loginTeam": "annac",
+                "firstNameTeam": "Anna Caroline Ferreira Inacio",
+                "nickNameTeam": "Anna",
+                "pictureTeam": ""
+                },
+                {
+                    "loginTeam": "tiagoms",
+                    "firstNameTeam": "Tiago Mendes Silva",
+                    "nickNameTeam": "",
+                    "pictureTeam": ""
+                },
+                {
+                    "loginTeam": "caiohenrique",
+                    "firstNameTeam": "Caio Henrique",
+                    "nickNameTeam": "Caio",
+                    "pictureTeam": ""
+                }
+            ],
+            "coach": "Joana",
+            "pdm": "Pedro",
+            "bp": "Maria",
+            "biograph": "",
+            "biographAvaliable":false,
+            "clientName": "Ambev",
+            "picture": "",
+            "awardsCategories": [
+                {
+                "nameAwardsCategories": "Team Highlight",
+                "iconAwardsCategories": "",
+                "awards": [
+                    {
+                        "dateAwardsCategories": "01-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                ]
+                },
+  {
+                "nameAwardsCategories": "Individual Highlight",
+                "iconAwardsCategories": "",
+                "awards": [
+                    {
+                        "dateAwardsCategories": "01-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                ]
+                },
+                     {
+                    "nameAwardsCategories": "Team Highlight",
+                    "iconAwardsCategories": "",
+                    "awards": [
+                    {
+                        "dateAwardsCategories": "06-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                    ]
+                },
+                {
+                    "nameAwardsCategories": "Team Highlight",
+                    "iconAwardsCategories": "",
+                    "awards": [
+                    {
+                        "dateAwardsCategories": "09-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                    ]
+                },
+                {
+                "nameAwardsCategories": "Individual Highlight",
+                "iconAwardsCategories": "",
+                "awards": [
+                    {
+                        "dateAwardsCategories": "10-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                ]
+                },
+           {
+                "nameAwardsCategories": "Individual Highlight",
+                "iconAwardsCategories": "",
+                "awards": [
+                    {
+                        "dateAwardsCategories": "10-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                ]
+                },
+           {
+                "nameAwardsCategories": "Personalizados",
+                "iconAwardsCategories": "",
+                "awards": [
+                    {
+                        "dateAwardsCategories": "10-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                ]
+                },
+ {
+                "nameAwardsCategories": "Personalizados",
+                "iconAwardsCategories": "",
+                "awards": [
+                    {
+                        "dateAwardsCategories": "10-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                ]
+                },
+                {
+                    "nameAwardsCategories": "Personalizados",
+                    "iconAwardsCategories": "",
+                    "awards": [
+                    {
+                        "dateAwardsCategories": "10-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                    ]
+                }
+                ]  
+          
+        },
         {
-           "login": "annac",
-           "name": "ANNA CAROLINE",
-           "nickname": "annac",
-           "picture": "https://citweb.cit.com.br/ipeople/photo?ipeople-photo-token=a33d98c6ed170926bfcfa91aec930574&cdLogin=annac"
-       }
-   ],
-   "coach": {
-       "login": "mpedroso",
-       "name": "ANNA CAROLINE",
-       "nickname": "Anna"
-   },
-   "pdm": {
-       "login": "rodolfogk",
-       "name": "ANNA CAROLINE",
-       "nickname": "Anna"
-   },
-   "bp": {
-       "login": "abvalle",
-       "name": "ANNA CAROLINE",
-       "nickname": "Anna"
-   },
-   "biograph": "Olá, me chamo Anna, tenho 23 anos, sou formada em Análise e Desenvolvimento de Sistemas e graduanda em Engenharia da Computação. Amo dança e artes no geral, sou apaixonada pela mensagem passada pela arte e pela dança, faz com que me sinta livre. Outra paixão é a tecnologia, sou fascinada pela forma que ela se atualiza constantemente e isso só aumenta a minha curiosidade em aprender. Sou uma pessoa focada, determinada e otimista. Acredito que otimismo e o trabalho duro é suficiente para superar qualquer obstáculo e entregar qualquer tarefa.",
-   "avaliable": true,
-   "clientName": "O Boticario",
-   "picture": "https://citweb.cit.com.br/ipeople/photo?ipeople-photo-token=a33d98c6ed170926bfcfa91aec930574&cdLogin=annac",
-   "awardsCategories": [
-       {
-           "name": "Team Highlight",
-           "icon": "https://citweb.cit.com.br/ipeople/award_icon?id=4",
-           "awards" :[
-               {
-                   "date": 1325383200000,
-                   "year": "2012",
-                   "loginDeliv": null,
-                   "comment": null
-               }
-           ]
-       }
-   ] 
-}
+            "id": 5,
+            "name": "Marlon Henrique",
+            "login": "marlonhs",
+            "nickName": "Marlon",
+            "email": "marlonhs@ciandt.com",
+            "contact": "11 998237763",
+            "admission": 1258941600000,
+            "admissionReal": 1212375600000,
+            "status": false,
+            "chat": "102773712819228860036",
+            "role": {
+        "code": 61,
+        "name": "Developer"
+    },
+            "area":{
+        "code": 502,
+        "name": "Purple",
+        "begin": null
+    },
+            "project":{
+        "codeProject": 11266,
+        "nameProject": "Prod_Purple_BR"
+    },
+"cityBase": {
+        "codeCityBase": 1,
+        "nameCityBase": "São Paulo",
+        "acronymCityBase": "SP",
+        "locationCityBase": "We work"
+    },
+
+            "company":{
+        "code": 1,
+        "name": "CIT Software S.A."
+    },
+            "timeLine": [
+                {
+            "areaTimeLine": "Purple ",
+            "projectTimeLinet": "Ontap",
+            "teamTimeLine": "Boticário", 
+            "beginDateTimeLine": 1293847200033,
+            "beginAnoTimeLine": 2009,
+            "beginMesTimeLine":"Fevereiro"
+        },
+            {
+            "areaTimeLine": "Purple",
+            "projectTimeLinet": "BEES",
+            "teamTimeLine": "Original",
+            "beginDateTimeLine": 1325383200033,
+            "beginAnoTimeLine": 2010,
+            "beginMesTimeLine":"Fevereiro"
+        },
+        {
+            "areaTimeLine": "Red",
+            "projectTimeLinet": "Bradesco",
+            "teamTimeLine": "Velis", 
+            "beginDateTimeLine": 1293947200033,
+            "beginAnoTimeLine": 2020,
+            "beginMesTimeLine":"Fevereiro"
+        }
+            ],
+            "GU": "GU Vela",
+            "team": [
+                {
+                "loginTeam": "annac",
+                "firstNameTeam": "Anna Caroline Ferreira Inacio",
+                "nickNameTeam": "Anna",
+                "pictureTeam": ""
+                },
+                {
+                    "loginTeam": "tiagoms",
+                    "firstNameTeam": "Tiago Mendes Silva",
+                    "nickNameTeam": "",
+                    "pictureTeam": ""
+                },
+                {
+                    "loginTeam": "caiohenrique",
+                    "firstNameTeam": "Caio Henrique",
+                    "nickNameTeam": "Caio",
+                    "pictureTeam": ""
+                }
+            ],
+            "coach": "Olavo B",
+            "pdm": "Heloisa B",
+            "bp": "Danilo C",
+            "biograph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rhoncus lectus tellus. Suspendisse in nulla quis nisi pretium elementum. Praesent a ante convallis, scelerisque libero nec, pulvinar est. Pellentesque in nulla sit amet arcu efficitur faucibus. Proin et nisl quis urna sollicitudin consequat. Etiam sed interdum lectus, quis venenatis erat. Maecenas laoreet eros eu ullamcorper tincidunt. Nulla sed quam eu nisl maximus feugiat in vitae mauris. Phasellus sed leo nisl. Suspendisse varius ex nec libero convallis euismod. Aliquam eget cursus diam. Etiam vitae eros vitae ligula vulputate finibus. Maecenas ac nunc cursus, blandit risus vel, vestibulum leo. Nullam sit amet ultricies sem, a ultricies massa.",
+            "biographAvaliable":true,
+            "clientName": "AB-INBEV",
+            "picture": "",
+            "awardsCategories": [
+                {
+                "nameAwardsCategories": "Team Highlight",
+                "iconAwardsCategories": "",
+                "awards": [
+                    {
+                        "dateAwardsCategories": "01-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                ]
+                },
+  {
+                "nameAwardsCategories": "Individual Highlight",
+                "iconAwardsCategories": "",
+                "awards": [
+                    {
+                        "dateAwardsCategories": "01-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                ]
+                },
+ {
+                "nameAwardsCategories": "Personalizados",
+                "iconAwardsCategories": "",
+                "awards": [
+                    {
+                        "dateAwardsCategories": "01-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                ]
+                },
+                     {
+                    "nameAwardsCategories": "Team Highlight",
+                    "iconAwardsCategories": "",
+                    "awards": [
+                    {
+                        "dateAwardsCategories": "06-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                    ]
+                },
+                {
+                    "nameAwardsCategories": "Team Highlight",
+                    "iconAwardsCategories": "",
+                    "awards": [
+                    {
+                        "dateAwardsCategories": "09-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                    ]
+                },
+                {
+                "nameAwardsCategories": "Individual Highlight",
+                "iconAwardsCategories": "",
+                "awards": [
+                    {
+                        "dateAwardsCategories": "10-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                ]
+                },
+           {
+                "nameAwardsCategories": "Individual Highlight",
+                "iconAwardsCategories": "",
+                "awards": [
+                    {
+                        "dateAwardsCategories": "10-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                ]
+                },
+           {
+                "nameAwardsCategories": "Personalizados",
+                "iconAwardsCategories": "",
+                "awards": [
+                    {
+                        "dateAwardsCategories": "10-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                ]
+                },
+ {
+                "nameAwardsCategories": "Personalizados",
+                "iconAwardsCategories": "",
+                "awards": [
+                    {
+                        "dateAwardsCategories": "10-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                ]
+                },
+                {
+                    "nameAwardsCategories": "Personalizados",
+                    "iconAwardsCategories": "",
+                    "awards": [
+                    {
+                        "dateAwardsCategories": "10-11-2020",
+                        "loginDelivAwardsCategories": null,
+                        "commentAwardsCategories": null
+                    }
+                    ]
+                }
+                ]  
+          
+        }
+
    ]
 }

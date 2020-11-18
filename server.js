@@ -5,6 +5,7 @@ const nunjucks = require('nunjucks')
 const porta = 3000
 const got = require('got')
 const { totalmem } = require('os')
+const { query } = require('express')
 
 
 server.use(express.static("FRONTEND/public"))
@@ -21,17 +22,36 @@ nunjucks.configure('FRONTEND/src', {
 server.set('view engine', '.html')
 
 //GET PERSON
-async function getPerson(name){
+async function getPerson(login){
     try {
         const response = await got(`http://localhost:3333/people`)
         return JSON.parse(response.body).filter((person) =>{
-            return person.name === name
+            return person.login.toUpperCase().includes(login.toUpperCase())
         })
     } catch (err) {
         console.log(err.response.body)
     }
 }
 
+
+//GET PERSON NAME
+async function searchPeopleByName(name){
+    try {
+        const response = await got(`http://localhost:3333/people`)
+        return JSON.parse(response.body).filter((person) =>{
+            let includes = false
+            const names = name.split(' ')
+            names.forEach(queryName=> {
+                if(person.name.toUpperCase().includes(queryName.toUpperCase())){
+                    includes = true;
+                }
+            })
+            return includes;
+        })
+    } catch (err) {
+        console.log(err)
+    }
+}
 
 //GET PEOPLE
 async function listPeople(){
@@ -42,6 +62,7 @@ async function listPeople(){
         console.log(err.response.body)
     }
 }
+
 
 //POST
 async function insertPerson(person){
@@ -81,11 +102,6 @@ async function changePerson(id,body){
     }
 }
 
-server.get('/', (req, res) =>{
-    return res.render('../src/perfil.html')
-   
-})
-
 server.get('/people', async(req, res) =>{
 
     const  result = await listPeople()
@@ -114,6 +130,12 @@ server.get('/people', async(req, res) =>{
     
     let qtdAwardIndividualHighlight =  totalAwardIndividualHighlight.length
 
+    let totalAwardPersonalizados = result[0].awardsCategories.filter((awardTeam) =>{
+        return awardTeam.nameAwardsCategories === 'Personalizados'
+    })
+    
+    let qtdAwardPersonalizados =  totalAwardPersonalizados.length
+
 
     return res.render('../src/perfil.html',{
         nameEmployee: result[0].name,
@@ -127,34 +149,104 @@ server.get('/people', async(req, res) =>{
         emailEmployee: result[0].email,
         loginEmployee: result[0].login,
         companyEmployee: result[0].role.nameRole,
-        teamEmployee: result[0].team[0].firstNameTeam,
+        teamEmployee: result[0].GU,
         baseEmployee: result[0].cityBase.nameCityBase,
         acronymCityBaseEmployee: result[0].cityBase.acronymCityBase,
         acronymCityBaseEmployee: result[0].cityBase.acronymCityBase,
+        contract: result[0].project.nameProject,
         qtdAwardHighlight,
         qtdAwardAreaStar,
         qtdAwardYouRock,
         qtdAwardIndividualHighlight,
+        qtdAwardPersonalizados,
         totalAwardHighlight,
         totalAwardAreaStar,
         totalAwardYouRock,
         totalAwardIndividualHighlight,
-
-
-
-
-
+        totalAwardPersonalizados,
+        optionBiograph: result[0].biographAvaliable,
+        status: result[0].status
     })
 })
 
-server.get('/people/:name', async(req, res) =>{
+server.get('/people/search', async (req, res) =>{
+    const result = await searchPeopleByName(req.query.name)
     
-    const result = await getPerson(req.params.name)
-    res.send(result)
+    let totalAwardHighlight = result[0].awardsCategories.filter((awardTeam) =>{
+        return awardTeam.nameAwardsCategories === 'Team Highlight'
+    })
+    
+    let qtdAwardHighlight = totalAwardHighlight.length
+
+    let totalAwardAreaStar= result[0].awardsCategories.filter((awardTeam) =>{
+        return awardTeam.nameAwardsCategories === 'Area Star'
+    })
+
+    let qtdAwardAreaStar =  totalAwardAreaStar.length
+
+    let totalAwardYouRock = result[0].awardsCategories.filter((awardTeam) =>{
+        return awardTeam.nameAwardsCategories === 'You Rock'
+    })
+
+    let qtdAwardYouRock=  totalAwardYouRock.length
+
+    let totalAwardIndividualHighlight = result[0].awardsCategories.filter((awardTeam) =>{
+        return awardTeam.nameAwardsCategories === 'Individual Highlight'
+    })
+    
+    let qtdAwardIndividualHighlight =  totalAwardIndividualHighlight.length
+
+    let totalAwardPersonalizados = result[0].awardsCategories.filter((awardTeam) =>{
+        return awardTeam.nameAwardsCategories === 'Personalizados'
+    })
+    
+    let qtdAwardPersonalizados =  totalAwardPersonalizados.length
+
+    return res.render('../src/perfil.html',{
+        nameEmployee: result[0].name,
+        bp: result[0].bp,
+        coach: result[0].coach,
+        contact: result[0].contact,
+        pdm: result[0].pdm,
+        biograph: result[0].biograph,
+        nickName: result[0].nickName,
+        locateBuilding: result[0].cityBase.locationCityBase,
+        emailEmployee: result[0].email,
+        loginEmployee: result[0].login,
+        companyEmployee: result[0].role.nameRole,
+        teamEmployee: result[0].GU,
+        baseEmployee: result[0].cityBase.nameCityBase,
+        acronymCityBaseEmployee: result[0].cityBase.acronymCityBase,
+        acronymCityBaseEmployee: result[0].cityBase.acronymCityBase,
+        contract: result[0].project.nameProject,
+        qtdAwardHighlight,
+        qtdAwardAreaStar,
+        qtdAwardYouRock,
+        qtdAwardIndividualHighlight,
+        qtdAwardPersonalizados,
+        totalAwardHighlight,
+        totalAwardAreaStar,
+        totalAwardYouRock,
+        totalAwardIndividualHighlight,
+        totalAwardPersonalizados,
+        optionBiograph: result[0].biographAvaliable,
+        status: result[0].status,
+        areaTimeLine: result[0].timeLine[0].areaTimeLine,
+        beginMesTimeLine: result[0].timeLine[0].beginMesTimeLine,
+        beginAnoTimeLine:result[0].timeLine[0].beginAnoTimeLine,
+        areaTimeLine1: result[0].timeLine[1].areaTimeLine,
+        beginMesTimeLine1: result[0].timeLine[1].beginMesTimeLine,
+        beginAnoTimeLine1:result[0].timeLine[1].beginAnoTimeLine,
+        areaTimeLine2: result[0].timeLine[2].areaTimeLine,
+        beginMesTimeLine2: result[0].timeLine[2].beginMesTimeLine,
+        beginAnoTimeLine2:result[0].timeLine[2].beginAnoTimeLine,
+        chatPerson: result[0].chat
+    })
 })
 
-server.post('/people', async (req, res) =>{
-    const result = await insertPerson(req.body)
+server.get('/people/:login', async(req, res) =>{
+    
+    const result = await getPerson(req.params.login)
     res.send(result)
 })
 
