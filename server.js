@@ -201,6 +201,7 @@ server.get('/people/search', async (req, res) =>{
     })
     
     let qtdAwardPersonalizados =  totalAwardPersonalizados.length
+ 
 
     return res.render('../src/perfil.html',{
         nameEmployee: result[0].name,
@@ -240,7 +241,8 @@ server.get('/people/search', async (req, res) =>{
         areaTimeLine2: result[0].timeLine[2].areaTimeLine,
         beginMesTimeLine2: result[0].timeLine[2].beginMesTimeLine,
         beginAnoTimeLine2:result[0].timeLine[2].beginAnoTimeLine,
-        chatPerson: result[0].chat
+        chatPerson: result[0].chat,
+        squad: result[0].team,
     })
 })
 

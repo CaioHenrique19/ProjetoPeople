@@ -39,7 +39,6 @@
                     </div>
                 </div>
             </div>
-
     </header>
     <main>
 
@@ -48,7 +47,7 @@
                 <h1 class="nome">{{nameEmployee}} ({{nickName}})</h1>
                 <p>{{companyEmployee}}</p>
                 <div class="caixa-img">
-                    <img src="/img/Bill.png">
+                    <img src="/img/{{loginEmployee}}.jpg">
                 </div>
 
                 <div class="div-status">
@@ -273,76 +272,28 @@
                     </ul>
             </div>
 
-            <div class="time">
-                <div class="wrapper3">
-                    <div>
-                        <h2 class="smtitle">Minha Equipe</h2>
-                    </div>
-                    <hr>
-                    <div class="container">
-                            <div class="squad">
-                                <img src="/img/equipe/cbarcellos.jpg" name="squad-photo">
-                                <p class="sqname"><a  href="https://people.cit.com.br/profile/cbarcellos">
-                                    Carlos Barcellos</a></p>
+                <div class="time">
+                    <div class="wrapper3">
+                        <div>
+                            <h2 class="smtitle">Minha Equipe</h2>
+                        </div>
+                        <hr>
+                        <div class="container">
+                        {% for squadTeam in squad %}
+                            <div>
+                                <div class="squad">
+                                    <img src="/img/{{squadTeam.loginTeam}}.jpg" name="squad-photo" 
+                                    alt="{{squadTeam.firstNameTeam}}">
+                                        <p class="sqname">
+                                            <a  href="https://people.cit.com.br/profile/{{squadTeam.loginTeam}}">
+                                            {{squadTeam.firstNameTeam}}</a></p>
                             </div>
-                            <div class="squad">
-                                <img src="/img/equipe/dcereda.jpg" name="squad-photo">
-                                <p class="sqname"><a  href="https://people.cit.com.br/profile/dcereda">
-                                    Danilo Cereda</a></p>
-                            </div>
-                            <div class="squad">
-                                <img src="/img/equipe/matheushd.jpg" name="squad-photo">
-                                <p class="sqname"><a  href="https://people.cit.com.br/profile/matheushd">
-                                    Matheus Henrick</a></p>
-                            </div>
-                            <div class="squad">
-                                <img src="/img/equipe/rgibin.jpg" name="squad-photo">
-                                <p class="sqname"><a  href="https://people.cit.com.br/profile/rgibin">
-                                    Rodrigo Gibin</a></p>
-                            </div>
-                            <div class="squad">
-                                <img src="/img/equipe/cbarcellos.jpg" name="squad-photo">
-                                <p class="sqname"><a  href="https://people.cit.com.br/profile/cbarcellos">
-                                    Carlos Barcellos</a></p>
-                            </div>
-                            <div class="squad">
-                                <img src="/img/equipe/dcereda.jpg" name="squad-photo">
-                                <p class="sqname"><a  href="https://people.cit.com.br/profile/dcereda">
-                                    Danilo Cereda</a></p>
-                            </div>
-                            <div class="squad">
-                                <img src="/img/equipe/matheushd.jpg" name="squad-photo">
-                                <p class="sqname"><a  href="https://people.cit.com.br/profile/matheushd">
-                                    Matheus Henrick</a></p>
-                            </div>
-                            <div class="squad">
-                                <img src="/img/equipe/rgibin.jpg" name="squad-photo">
-                                <p class="sqname"><a  href="https://people.cit.com.br/profile/rgibin">
-                                    Rodrigo Gibin</a></p>
-                            </div>
-                            <div class="squad">
-                                <img src="/img/equipe/cbarcellos.jpg" name="squad-photo">
-                                <p class="sqname"><a  href="https://people.cit.com.br/profile/cbarcellos">
-                                    Carlos Barcellos</a></p>
-                            </div>
-                            <div class="squad">
-                                <img src="/img/equipe/dcereda.jpg" name="squad-photo">
-                                <p class="sqname"><a  href="https://people.cit.com.br/profile/dcereda">
-                                    Danilo Cereda</a></p>
-                            </div>
-                            <div class="squad">
-                                <img src="/img/equipe/matheushd.jpg" name="squad-photo">
-                                <p class="sqname"><a  href="https://people.cit.com.br/profile/matheushd">
-                                    Matheus Henrick</a></p>
-                            </div>
-                            <div class="squad">
-                                <img src="/img/equipe/rgibin.jpg" name="squad-photo">
-                                <p class="sqname"><a  href="https://people.cit.com.br/profile/rgibin">
-                                    Rodrigo Gibin</a></p>
-                            </div>
+                        </div>
+                        {% endfor %}
+                        </div>
                     </div>
                 </div>
-            </div>
+
 
         </div>
         
