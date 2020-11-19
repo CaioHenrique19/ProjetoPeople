@@ -71,6 +71,13 @@ h3{
     padding: 15px 20px;
     vertical-align: middle;  
 }
+
+.randomAwards li{
+    display: flex;
+    flex-direction: row;
+    padding: 15px 20px;
+    vertical-align: middle;  
+}
 .resultado-categorias img{
     width: 10%;
     height: 10%;

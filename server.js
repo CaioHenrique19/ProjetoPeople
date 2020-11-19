@@ -202,6 +202,17 @@ server.get('/people/search', async (req, res) =>{
     
     let qtdAwardPersonalizados =  totalAwardPersonalizados.length
  
+    function getRandom(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+    }
+    
+    let randomNumbers = [33, 50, 40, 30, 19, 14, 32, 54, 25, 36, 11, 13]
+
+    for (let i = 1 ; i <= 12 ; i++){
+        randomNumbers.push(getRandom(1,7));
+    }
+
+    console.log(randomNumbers.slice(16,23))
 
     return res.render('../src/perfil.html',{
         nameEmployee: result[0].name,
@@ -243,6 +254,7 @@ server.get('/people/search', async (req, res) =>{
         beginAnoTimeLine2:result[0].timeLine[2].beginAnoTimeLine,
         chatPerson: result[0].chat,
         squad: result[0].team,
+        randomNumbers: randomNumbers.slice(17,24),
     })
 })
 

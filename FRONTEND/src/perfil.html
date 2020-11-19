@@ -20,22 +20,24 @@
 <body>
     <header>
 
-            <div class ="principal">
-                <div class="topo">
-                    <div class="img-logo">
-                        <img src="/img/Logo.png"id="img-logo">
+<div class ="principal">
+            <div class="cabecalho">
+                <div class="logo">
+                    <img src="/img/Logo.png">
+                </div>
+                <div class="barra-busca">
+                    <input type = "text">
+                    <div class="caixa-lupa">
+                        <img src="/img/loupe.png">
                     </div>
-                    <div class="barraPesquisaTopo">
-                        <input type = "text"id="pesquisarTopo"style="height:25px;border-radius:10px; margin-top: 3%; margin-left:1%">
-                        <img src="/img/loupe.png"id="btnLupaTopo">
-                    </div>         
-                    <div class="logout">
-                        <div class=logout-logout>
-                            <a href=""id="editarperfil">editar perfil</a>
-                            <p class="traco">|</p>
-                            <a href=""id="logoutlogout">logout</a>
-                            <img src="/img/billPerfil.png"id="logoutTopo">
-                        </div>
+                </div>
+                <div class="logout">
+                    <div class="texto-cabecalho">
+                        <a href="">editar perfil |</a>
+                        <a href="">logout</a>
+                    </div>
+                    <div class="img-perfil-cabecalho">
+                        <img src="/perfil/{{loginEmployee}}.jpg">
                     </div>
                 </div>
             </div>
@@ -47,7 +49,7 @@
                 <h1 class="nome">{{nameEmployee}} ({{nickName}})</h1>
                 <p>{{companyEmployee}}</p>
                 <div class="caixa-img">
-                    <img src="/img/{{loginEmployee}}.jpg">
+                    <img src="/perfil/{{loginEmployee}}.jpg">
                 </div>
 
                 <div class="div-status">
@@ -169,7 +171,7 @@
                     </div>
                     <hr>
                     <div>
-                        <h2 class="title">Biografia</h2></br>
+                        <h2 class="title">Biografia</h2>
                     </div>
                     {% if optionBiograph %}
                     <div class="biografia-texto">
@@ -187,7 +189,8 @@
 
             <div class="linha-do-tempo">
                 
-                <!-- <div class="timeline">--><h1>Linha do Tempo</h1> 
+                <!-- <div class="timeline">--><h1>Linha do Tempo</h1>
+                <hr>
                     <div class="progress">
                         <ul>
                             <li>
@@ -253,25 +256,17 @@
                             <img src="/img/sustainability.png">
                             <img src="/img/teamwork.png">
                         </li>
+                        
 
-                        <h3 class="title">Personalizadas {{qtdAwardPersonalizados}}</h3>
-                        <li>
-                            <img src="https://citweb.cit.com.br/ipeople/award_icon?id=33">
-                            <img src="https://citweb.cit.com.br/ipeople/award_icon?id=50">
-                            <img src="https://citweb.cit.com.br/ipeople/award_icon?id=40">
-                            <img src="https://citweb.cit.com.br/ipeople/award_icon?id=30">
-                            <img src="https://citweb.cit.com.br/ipeople/award_icon?id=19">
-                            <img src="https://citweb.cit.com.br/ipeople/award_icon?id=14">
-                            <img src="https://citweb.cit.com.br/ipeople/award_icon?id=32">
-                            <img src="https://citweb.cit.com.br/ipeople/award_icon?id=54">
-                            <img src="https://citweb.cit.com.br/ipeople/award_icon?id=25">
-                            <img src="https://citweb.cit.com.br/ipeople/award_icon?id=36">
-                            <img src="https://citweb.cit.com.br/ipeople/award_icon?id=11">
-                            <img src="https://citweb.cit.com.br/ipeople/award_icon?id=13">
+                        <h3 class="title">Personalizadas</h3>
+                        
+                        <li >
+                        {%for randomValues in randomNumbers%}
+                            <img class = "randomAwards" src="https://citweb.cit.com.br/ipeople/award_icon?id={{randomValues}}" alt = "Essa imagem é referente ao award">
+                        {%endfor%}
                         </li>
                     </ul>
             </div>
-
                 <div class="time">
                     <div class="wrapper3">
                         <div>
@@ -287,8 +282,8 @@
                                         <p class="sqname">
                                             <a  href="https://people.cit.com.br/profile/{{squadTeam.loginTeam}}">
                                             {{squadTeam.firstNameTeam}}</a></p>
-                            </div>
-                        </div>
+                                        </div>
+                                </div>
                         {% endfor %}
                         </div>
                     </div>
