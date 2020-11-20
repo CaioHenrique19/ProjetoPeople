@@ -71,6 +71,13 @@ h3{
     padding: 15px 20px;
     vertical-align: middle;  
 }
+
+.randomAwards li{
+    display: flex;
+    flex-direction: row;
+    padding: 15px 20px;
+    vertical-align: middle;  
+}
 .resultado-categorias img{
     width: 10%;
     height: 10%;
@@ -78,6 +85,43 @@ h3{
     margin: 1%;
     vertical-align: middle; 
 }
+
+.resultado-categorias h4{
+    padding-left: 10px;
+}
+
+.notificacao {
+    width: 4%;
+    height: 3%;
+    position: absolute;
+    margin-left: 8%;
+    border-radius: 50%;
+    background-color: #20bec6;
+    border: 2px solid #ffffff;
+}
+.notificacao p{
+    color: #ffffff;
+    font-weight: bolder;
+    padding-top: 7%;
+}
+
+.notificacao-menor{
+    width: 3.5%;
+    height: 2.5%;
+    position: absolute;
+    margin-left: 7%;
+    border-radius: 50%;
+    background-color: #20bec6;
+    border: 2px solid #ffffff;
+} 
+.notificacao-menor p{
+    color: #ffffff;
+    font-weight: bolder;
+    padding-top: 1%;
+    padding-left: 30%;
+}
+
+
 
 /* Time/Squad */
 .time{

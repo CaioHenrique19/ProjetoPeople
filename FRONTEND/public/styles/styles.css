@@ -56,6 +56,7 @@ ul {
     font-size: 14px;
     font-weight: normal;
     text-align: justify;
+    padding-top: 5px;
 }
 
 .title{
@@ -108,6 +109,13 @@ hr {
 
 
 }
+.container a{
+    text-decoration: none;
+}
+
+.container a:hover{
+    color: black;
+ }
 
 .wrapper3{
     overflow:hidden; 

@@ -12,34 +12,35 @@
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet"href="/styles/timeline.css">
     <link rel="stylesheet" href="/styles/minhas-recompensas.css">
-    
     <link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="shortcut icon" href="//br.ciandt.com/themes/custom/ciandt/favicon.ico"/>
 
 </head>
 
 <body>
     <header>
 
-            <div class ="principal">
-                <div class="topo">
-                    <div class="img-logo">
-                        <img src="/img/Logo.png"id="img-logo">
+<div class ="principal">
+            <div class="cabecalho">
+                <div class="logo">
+                    <img src="/img/Logo.png">
+                </div>
+                <div class="barra-busca">
+                    <input type = "text">
+                    <div class="caixa-lupa">
+                        <img src="/img/loupe.png">
                     </div>
-                    <div class="barraPesquisaTopo">
-                        <input type = "text"id="pesquisarTopo"style="height:25px;border-radius:10px; margin-top: 3%; margin-left:1%">
-                        <img src="/img/loupe.png"id="btnLupaTopo">
-                    </div>         
-                    <div class="logout">
-                        <div class=logout-logout>
-                            <a href=""id="editarperfil">editar perfil</a>
-                            <p class="traco">|</p>
-                            <a href=""id="logoutlogout">logout</a>
-                            <img src="/img/billPerfil.png"id="logoutTopo">
-                        </div>
+                </div>
+                <div class="logout">
+                    <div class="texto-cabecalho">
+                        <a href="">editar perfil |</a>
+                        <a href="">logout</a>
+                    </div>
+                    <div class="img-perfil-cabecalho">
+                        <img src="/perfil/{{loginEmployee}}.jpg">
                     </div>
                 </div>
             </div>
-
     </header>
     <main>
 
@@ -48,15 +49,17 @@
                 <h1 class="nome">{{nameEmployee}} ({{nickName}})</h1>
                 <p>{{companyEmployee}}</p>
                 <div class="caixa-img">
-                    <img src="img/Bill.png">
+                    <img src="/perfil/{{loginEmployee}}.jpg">
                 </div>
 
                 <div class="div-status">
                     <label for="">Status em: </label>
                     <select class="opcoes-slc">
-                        <option value="disponivel">#Disponível</option>
+                    {% if status%}
+                        <option value="disponivel">#Disponível</h5>
+                    {%else%}
                         <option value="ausente">#Ausente</option>
-                        <option value="ocupado">#Ocupado</option>
+                    {%endif%}
                     </select>
                 </div>
 
@@ -64,31 +67,31 @@
                     <ul>
                         <li>
                             <div>
-                                <img src="img/gmail.png">
+                                <img src="/img/gmail.png">
                                 <div class="div-texto">
-                                    <a href=""><p>{{emailEmployee}}</p></a>
+                                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to={{emailEmployee}}" target="_blank"><p>{{emailEmployee}}</p></a>
                                 </div>
                             </div>  
                         </li>
                         <li>
                             <div>
-                                <img src="img/chat.png">
+                                <img src="/img/chat.png">
                                 <div class="div-texto">
-                                    <a href=""><p>{{loginEmployee}}</p></a>
+                                    <a href="https://chat.google.com/newdm/{{chatPerson}}" target="_blank"><p>{{loginEmployee}}</p></a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div>
-                                <img src="img/business.png">
+                                <img src="/img/business.png">
                                 <div class="div-texto">
-                                    <p>{{companyEmployee}}</p>
+                                    <p>{{contract}}</p>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div>
-                                <img src="img/squad.png">
+                                <img src="/img/squad.png">
                                 <div class="div-texto">
                                     <p>{{teamEmployee}}</p>
                                 </div>
@@ -96,15 +99,15 @@
                         </li>
                         <li>
                             <div>
-                                <img src="img/tech-gallery.png" class="tech-gallery">
+                                <img src="/img/tech-gallery.png" class="tech-gallery">
                                 <div class="div-texto">
-                                    <a href=""><p>{{loginEmployee}}</p></a>
+                                    <a href="https://techgallery.ciandt.com/#/people/{{loginEmployee}}" target="_blank"><p>{{loginEmployee}}</p></a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div>
-                                <img src="img/placeholder.png">
+                                <img src="/img/placeholder.png">
                                 <div class="div-texto"> 
                                     <p>{{baseEmployee}} - {{acronymCityBaseEmployee}}</p>
                                 </div>
@@ -112,7 +115,7 @@
                         </li>
                         <li>
                             <div>
-                                <img src="img/predio-comercial.png">
+                                <img src="/img/predio-comercial.png">
                                 <div class="div-texto">
                                     <p> {{locateBuilding}} </p>
                                 </div>
@@ -170,43 +173,40 @@
                     <div>
                         <h2 class="title">Biografia</h2>
                     </div>
+                    {% if optionBiograph %}
                     <div class="biografia-texto">
                         <p class="item2">
                             {{biograph}}
                         </p>
                     </div>
+                        {%else%}
+                        <p class="item2">
+                            Colabore. Inove. Transforme.
+                        </p>
+                    {%endif%}
                 </div>
             </div>
 
             <div class="linha-do-tempo">
                 
-                <!-- <div class="timeline">--><h1>Linha do Tempo</h1> 
+                <!-- <div class="timeline">--><h1>Linha do Tempo</h1>
+                <hr>
                     <div class="progress">
                         <ul>
                             <li>
-                                <p>IBM</p>
+                                <p>{{areaTimeLine}}</p>
                                 <i class="fa fa-check"></i>
-                                <p class="pdata">11/2000</p>
+                                <p class="pdata">{{beginMesTimeLine}}/{{beginAnoTimeLine}}</p>
                             </li>
                             <li>
-                                <p>Itaú</p>
+                                <p>{{areaTimeLine1}}</p>
                                 <i class="fa fa-check"></i>
-                                <p class="pdata">05/2002</p>
+                                <p class="pdata">{{beginMesTimeLine}}/{{beginAnoTimeLine}}</p>
                             </li>
                             <li>
-                                <p>Coca-Cola</p>
+                                <p>{{areaTimeLine2}}</p>
                                 <i class="fa fa-refresh"></i>
-                                <p class="pdata">08/2005</p>
-                             </li>
-                             <li>
-                                <p>Vivo</p>
-                                <i class="fa fa-times"></i>
-                                <p class="pdata">03/2010</p>
-                             </li>
-                             <li>
-                                <p>Raízen</p>
-                                <i class="fa fa-times"></i>
-                                <p class="pdata">07/2018</p>
+                                <p class="pdata">{{beginMesTimeLine}}/{{beginAnoTimeLine}}</p>
                              </li>
                         </ul>
                     </div>
@@ -219,119 +219,76 @@
                 <h3 class="title">Categorias</h3>
                     <ul class="categorias">
                         <li>
-                            <img src="img/area-star.png">
+                            <div class="notificacao"> 
+                                <p>{{qtdAwardAreaStar}}</p>
+                            </div>
+                            <img src="/img/area-star.png">
                             <a href=""><p>AREA STAR </p></a>
                         </li>
                         <li>
-                            <img src="img/individual-highlight.png">
+                            <div class="notificacao"> 
+                                <p>{{qtdAwardIndividualHighlight}}</p>
+                            </div>
+                            <img src="/img/individual-highlight.png">
                             <a href=""><p>INDIVIDUAL HIGHLIGHT</p></a>
                         </li>
                         <li>
-                            <img src="img/team-highlight.png">
+                            <div class="notificacao"> 
+                                <p>{{qtdAwardHighlight}}</p>
+                            </div>
+                            <img src="/img/team-highlight.png">
                             <a href=""><p>TEAM HIGHLIGHT</p></a>
                         </li>
                         <li>
-                            <img src="img/mission-accomplished.png">
-                            <a href=""><p>YOU ROCK!</p></a>
+                            <img src="https://citweb.cit.com.br/ipeople/award_icon?id=1">
+                            <a href=""><p>TEMPO DE CASA!</p></a>
                         </li>
                     </ul>
                     <ul class="resultado-categorias">
-                        <li>AREA STAR
-                            <img src="img/area-star.png">
-                            <img src="img/area-star.png">
-                            <img src="img/area-star.png">
+                            <li>YOU ROCK!
+                            <img src="/img/kaizen.png">
+                            <div class="notificacao-menor"> 
+                                <p>{{qtdAwardYouRock}}</p>
+                            </div>
+                            <img src="/img/mission-accomplished.png">
+                            <img src="/img/client-transformation.png">
+                            <img src="/img/client-satisfaction.png">
+                            <img src="/img/sustainability.png">
+                            <img src="/img/teamwork.png">
                         </li>
-                        <li>INDIVIDUAL HIGHLIGHT
-                            <img src="img/individual-highlight.png">
-                            <img src="img/individual-highlight.png">
-                        </li>
-                        <li>TEAM HIGHLIGHT
-                            <img src="img/team-highlight.png">
-                            <img src="img/team-highlight.png">
-                            <img src="img/team-highlight.png">
-                        </li>
-                        <li>YOU ROCK!
-                            <img src="img/kaizen.png">
-                            <img src="img/mission-accomplished.png">
-                            <img src="img/client-transformation.png">
-                            <img src="img/client-satisfaction.png">
-                            <img src="img/sustainability.png">
-                            <img src="img/teamwork.png">
-                            <img src="img/resilience.png">
+                        
+
+                        <h3 class="title">Personalizadas</h3>
+                        
+                        <li >
+                        {%for randomValues in randomNumbers%}
+                            <img class = "randomAwards" src="https://citweb.cit.com.br/ipeople/award_icon?id={{randomValues}}" alt = "Essa imagem é referente ao award">
+                        {%endfor%}
                         </li>
                     </ul>
             </div>
-
-            <div class="time">
-                <div class="wrapper3">
-                    <div>
-                        <h2 class="smtitle">Minha Equipe</h2>
-                    </div>
-                    <hr>
-                    <div class="container">
-                            <div class="squad">
-                                <img src="/img/equipe/cbarcellos.jpg" name="squad-photo">
-                                <p class="sqname"><a  href="https://people.cit.com.br/profile/cbarcellos">
-                                    Carlos Barcellos</a></p>
-                            </div>
-                            <div class="squad">
-                                <img src="/img/equipe/dcereda.jpg" name="squad-photo">
-                                <p class="sqname"><a  href="https://people.cit.com.br/profile/dcereda">
-                                    Danilo Cereda</a></p>
-                            </div>
-                            <div class="squad">
-                                <img src="/img/equipe/matheushd.jpg" name="squad-photo">
-                                <p class="sqname"><a  href="https://people.cit.com.br/profile/matheushd">
-                                    Matheus Henrick</a></p>
-                            </div>
-                            <div class="squad">
-                                <img src="/img/equipe/rgibin.jpg" name="squad-photo">
-                                <p class="sqname"><a  href="https://people.cit.com.br/profile/rgibin">
-                                    Rodrigo Gibin</a></p>
-                            </div>
-                            <div class="squad">
-                                <img src="/img/equipe/cbarcellos.jpg" name="squad-photo">
-                                <p class="sqname"><a  href="https://people.cit.com.br/profile/cbarcellos">
-                                    Carlos Barcellos</a></p>
-                            </div>
-                            <div class="squad">
-                                <img src="/img/equipe/dcereda.jpg" name="squad-photo">
-                                <p class="sqname"><a  href="https://people.cit.com.br/profile/dcereda">
-                                    Danilo Cereda</a></p>
-                            </div>
-                            <div class="squad">
-                                <img src="/img/equipe/matheushd.jpg" name="squad-photo">
-                                <p class="sqname"><a  href="https://people.cit.com.br/profile/matheushd">
-                                    Matheus Henrick</a></p>
-                            </div>
-                            <div class="squad">
-                                <img src="/img/equipe/rgibin.jpg" name="squad-photo">
-                                <p class="sqname"><a  href="https://people.cit.com.br/profile/rgibin">
-                                    Rodrigo Gibin</a></p>
-                            </div>
-                            <div class="squad">
-                                <img src="/img/equipe/cbarcellos.jpg" name="squad-photo">
-                                <p class="sqname"><a  href="https://people.cit.com.br/profile/cbarcellos">
-                                    Carlos Barcellos</a></p>
-                            </div>
-                            <div class="squad">
-                                <img src="/img/equipe/dcereda.jpg" name="squad-photo">
-                                <p class="sqname"><a  href="https://people.cit.com.br/profile/dcereda">
-                                    Danilo Cereda</a></p>
-                            </div>
-                            <div class="squad">
-                                <img src="/img/equipe/matheushd.jpg" name="squad-photo">
-                                <p class="sqname"><a  href="https://people.cit.com.br/profile/matheushd">
-                                    Matheus Henrick</a></p>
-                            </div>
-                            <div class="squad">
-                                <img src="/img/equipe/rgibin.jpg" name="squad-photo">
-                                <p class="sqname"><a  href="https://people.cit.com.br/profile/rgibin">
-                                    Rodrigo Gibin</a></p>
-                            </div>
+                <div class="time">
+                    <div class="wrapper3">
+                        <div>
+                            <h2 class="smtitle">Minha Equipe</h2>
+                        </div>
+                        <hr>
+                        <div class="container">
+                        {% for squadTeam in squad %}
+                            <div>
+                                <div class="squad">
+                                    <img src="/img/{{squadTeam.loginTeam}}.jpg" name="squad-photo" 
+                                    alt="{{squadTeam.firstNameTeam}}">
+                                        <p class="sqname">
+                                            <a  href="https://people.cit.com.br/profile/{{squadTeam.loginTeam}}">
+                                            {{squadTeam.firstNameTeam}}</a></p>
+                                        </div>
+                                </div>
+                        {% endfor %}
+                        </div>
                     </div>
                 </div>
-            </div>
+
 
         </div>
         
@@ -340,7 +297,7 @@
 
         <div class="rodape">
             <div>
-                <img src="img/Logo_CI&T_CMYK.png">
+                <img src="/img/Logo_CI&T_CMYK.png">
             </div>
             
         </div>
